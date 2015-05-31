@@ -1,1 +1,57 @@
 /* Empty. Add your own CSS if you like */
+
+.margin_vertical {
+  margin: 10px 0;
+}
+
+.margin_horizontal {
+  margin: 0 10px;
+}
+
+.hr_line_ff {
+  display: block;
+  border-top: 1px solid #AAAAAA;
+}
+
+.login_modal, .register_modal, .forgot_password_modal, .my_favour_modal {
+  background-color: rgba(0, 0, 0, 0.81);
+}
+
+.color_ff {
+  color: #ffffff !important;
+}
+
+.font_bold {
+  font-weight: bold;
+}
+.profile_list .item {
+  background-color: inherit;
+  padding: 5px;
+  color: #ffffff;
+}
+.no_padding {
+  padding:  0 !important;
+}
+.no_margin {
+  margin:  0 !important;
+}
+.profile_list .icon {
+  font-size: 30px;
+}
+.profile_list .col-80 {
+  padding: 5px 0;
+}
+.my_favour_items .item {
+  background-color: inherit;
+}
+.font_16px {
+  font-size: 16px !important;
+}
+
+.font_14px {
+  font-size: 14px !important;
+}
+
+.font_12px {
+  font-size: 12px !important;
+}

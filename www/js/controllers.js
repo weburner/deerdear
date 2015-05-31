@@ -16,18 +16,90 @@ angular.module('starter.controllers', [])
   $ionicModal.fromTemplateUrl('templates/login.html', {
     scope: $scope
   }).then(function(modal) {
-    $scope.modal = modal;
+    $scope.login_modal = modal;
   });
 
   // Triggered in the login modal to close it
   $scope.closeLogin = function() {
-    $scope.modal.hide();
+    $scope.login_modal.hide();
   };
 
   // Open the login modal
   $scope.login = function() {
-    $scope.modal.show();
+    $scope.login_modal.show();
   };
+
+
+
+    $ionicModal.fromTemplateUrl('templates/register.html', {
+      scope: $scope
+    }).then(function(modal) {
+      $scope.register_modal = modal;
+    });
+
+    // Triggered in the login modal to close it
+    $scope.closeRegister = function() {
+      $scope.register_modal.hide();
+    };
+
+    // Open the register modal
+    $scope.register = function() {
+      $scope.register_modal.show();
+    };
+
+
+
+
+    $ionicModal.fromTemplateUrl('templates/forgot-password.html', {
+      scope: $scope
+    }).then(function(modal) {
+      $scope.forgot_password_modal = modal;
+    });
+
+    // Triggered in the forgotPassword modal to close it
+    $scope.closeForgotPassword = function() {
+      $scope.forgot_password_modal.hide();
+    };
+
+    // Open the forgotPassword modal
+    $scope.forgotPassword = function() {
+      $scope.forgot_password_modal.show();
+    };
+
+
+    $ionicModal.fromTemplateUrl('templates/profile.html', {
+      scope: $scope
+    }).then(function(modal) {
+      $scope.profile_modal = modal;
+    });
+
+    // Triggered in the profile modal to close it
+    $scope.closeProfile = function() {
+      $scope.profile_modal.hide();
+    };
+
+    // Open the profile modal
+    $scope.profile = function() {
+      $scope.profile_modal.show();
+    };
+
+
+    $ionicModal.fromTemplateUrl('templates/my-favor.html', {
+      scope: $scope
+    }).then(function(modal) {
+      $scope.my_favor = modal;
+    });
+
+    // Triggered in the myFavor modal to close it
+    $scope.closeMyFavor = function() {
+      $scope.my_favor.hide();
+    };
+
+    // Open the myFavor modal
+    $scope.myFavor = function() {
+      $scope.my_favor.show();
+    };
+
 
   // Perform the login action when the user submits the login form
   $scope.doLogin = function() {
@@ -40,17 +112,3 @@ angular.module('starter.controllers', [])
     }, 1000);
   };
 })
-
-.controller('PlaylistsCtrl', function($scope) {
-  $scope.playlists = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
-  ];
-})
-
-.controller('PlaylistCtrl', function($scope, $stateParams) {
-});
