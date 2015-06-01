@@ -21,6 +21,9 @@
   color: #ffffff !important;
 }
 
+.color_aa{
+  color: #aaaaaa !important;
+}
 .font_bold {
   font-weight: bold;
 }
@@ -54,4 +57,23 @@
 
 .font_12px {
   font-size: 12px !important;
+}
+
+.style_page .card {
+  margin: 10px 5px !important;
+  height: 250px;
+}
+.height_65p {
+  height: 65%;
+}
+
+.pull_right {
+  float: right;
+}
+
+.pull_left {
+  float: left;
+}
+.comments_page .item {
+  padding: 5px;
 }
