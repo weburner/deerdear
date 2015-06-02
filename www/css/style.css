@@ -80,7 +80,3 @@
 .font_12px {
   font-size: 12px !important;
 }
-
-.media_list_page .thumbsup_icon:active, .media_list_page .col-20.heart_icon:active {
-  color: #de7980;
-}
