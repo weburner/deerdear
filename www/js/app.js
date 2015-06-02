@@ -38,6 +38,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
           }
         }
       })
+      .state('app.media-page', {
+        url: "/media-page",
+        views: {
+          'menuContent': {
+            templateUrl: "templates/media-page.html",
+            controller: 'AppCtrl'
+          }
+        }
+      })
       .state('app.media-list', {
         url: "/media-list",
         views: {

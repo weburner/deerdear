@@ -121,4 +121,10 @@ angular.module('starter.controllers', [])
       $state.go('app.comments');
     };
 
+    var swiper = new Swiper('.swiper-container', {
+      pagination: '.swiper-pagination',
+      paginationClickable: true,
+      direction: 'vertical'
+    });
+
   });
