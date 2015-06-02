@@ -80,3 +80,6 @@
 .font_12px {
   font-size: 12px !important;
 }
+.border_bottom {
+  border-bottom: 2px solid #aaa;
+}

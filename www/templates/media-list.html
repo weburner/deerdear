@@ -1,10 +1,10 @@
 <ion-view view-title="Media List">
 
-  <div class="bar bar-subheader" style="border-bottom: 1px solid #aaa;">
-    <div class="row text-center" ng-init="tab=1">
-      <div class="col-33" ng-click="tab=1">Media</div>
-      <div class="col-34" ng-click="tab=2">Style</div>
-      <div class="col-33" ng-click="tab=3">About</div>
+  <div class="bar bar-subheader" style="border-bottom: 1px solid #aaa; padding-bottom: 0px;height: 48px;">
+    <div class="row text-center no_padding" ng-init="tab=1">
+      <div class="col-33 padding-vertical" ng-click="tab=1" ng-class="{'border_bottom':(tab == 1)}">Media</div>
+      <div class="col-34 padding-vertical" ng-click="tab=2" ng-class="{'border_bottom':(tab == 2)}">Style</div>
+      <div class="col-33  padding-vertical" ng-click="tab=3" ng-class="{'border_bottom':(tab == 3)}">About</div>
     </div>
   </div>
 
