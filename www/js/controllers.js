@@ -97,10 +97,6 @@ angular.module('starter.controllers', [])
       $scope.my_favor.show();
     };
 
-    $scope.mediaList = function () {
-      $state.go('app.media-list')
-    };
-
 
     // Perform the login action when the user submits the login form
     $scope.doLogin = function () {

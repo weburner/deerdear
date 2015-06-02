@@ -9,7 +9,7 @@
 }
 
 .hr_line_ff {
-  display: block;
+  display: block !important;
   border-top: 1px solid #AAAAAA;
 }
 
@@ -86,8 +86,15 @@
 
 .slider_description {
   position: absolute;
-  bottom: 5px;
+  bottom: 10px;
   background-color: rgba(255, 255, 255, 0.51);
+  width: 100%;
+  height: auto;
+}
+.share_slider {
+  position: absolute;
+  bottom: 10px;
+  background-color: rgba(22, 22, 20, 0.98);
   width: 100%;
   height: auto;
 }
@@ -102,16 +109,31 @@
 
 .swiper-pagination{
   position: absolute !important;
-  top:10% !important;
+  top:5% !important;
 }
 .swiper-pagination-bullet-active{
   background: #000000 !important;
 }
 .swiper-slide.swiper-slide-active{
-  height: 100% !important;
+  height: 95vh !important;
 }
 
 .swiper-container-vertical>.swiper-pagination .swiper-pagination-bullet {
   margin: 10px 0 !important;
   border: 1px solid #ffffff !important;
+}
+.menu_content {
+  top:120px !important;
+  background-color: rgb(65, 65, 65) !important;
+}
+.menu_header {
+  background-color: rgb(65, 65, 65) !important;
+  height: 120px !important;
+}
+.menu_content ion-item {
+  background-color: rgb(65, 65, 65) !important;
+  color: #ffffff;
+  border: none !important;
+  padding: 5px 15px !important;
+  color: #AAAAAA;
 }

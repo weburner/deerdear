@@ -13,12 +13,79 @@
   </ion-side-menu-content>
 
   <ion-side-menu side="left">
-    <ion-header-bar class="bar-stable">
-      <h1 class="title">Left</h1>
+    <ion-header-bar class="bar-stable menu_header">
+      <!--<h1 class="title">Left</h1>-->
+      <div class="row">
+        <div class="col-offset-66 col-34">
+          <img src="../img/logo_big.png" alt="Logo" width="50px" height="100px"/>
+        </div>
+      </div>
     </ion-header-bar>
-    <ion-content>
-      <ion-list>
-        <ion-item menu-close ng-click="login()">
+    <ion-content class="menu_content">
+      <ion-list class="menu_list">
+        <ion-item menu-close>
+          <div class="row">
+            <div class="col-33">Media</div>
+            <div class="col-33">Media</div>
+            <div class="col-33"><i class="icon ion-chevron-right"></i></div>
+          </div>
+        </ion-item>
+        <ion-item menu-close>
+          <div class="row">
+            <div class="col-33">Style</div>
+            <div class="col-33">Style</div>
+            <div class="col-33"><i class="icon ion-chevron-right"></i></div>
+          </div>
+        </ion-item>
+        <ion-item menu-close>
+          <div class="row">
+            <div class="col-33">About</div>
+            <div class="col-33">About</div>
+            <div class="col-33"><i class="icon ion-chevron-right"></i></div>
+          </div>
+        </ion-item>
+
+        <div style="padding-top: 20px;"></div>
+
+        <ion-item menu-close class="font_14px">
+          <div class="row">
+            <div class="col-33">Olivia</div>
+            <div class="col-33">Olivia</div>
+          </div>
+        </ion-item>
+        <ion-item menu-close  class="font_14px">
+          <div class="row">
+            <div class="col-33">Stylish</div>
+            <div class="col-33">Stylish</div>
+          </div>
+        </ion-item>
+        <ion-item menu-close class="font_14px">
+          <div class="row">
+            <div class="col-33">IT Girl</div>
+            <div class="col-33">IT Girl</div>
+          </div>
+        </ion-item>
+
+        <div style="padding-top: 20px;"></div>
+
+        <p class="hr_line_ff"></p>
+
+        <ion-item menu-close>
+          <div class="row">
+            <div class="col-33">Profile</div>
+            <div class="col-33">Profile</div>
+          </div>
+        </ion-item>
+        <ion-item menu-close>
+          <div class="row">
+            <div class="col-33">Favor</div>
+            <div class="col-33">Favor</div>
+          </div>
+        </ion-item>
+
+        <p class="hr_line_ff" style="border-top-width: 2px;"></p>
+
+        <!--<ion-item menu-close ng-click="login()">
           Login
         </ion-item>
         <ion-item menu-close ng-click="register()">
@@ -32,10 +99,8 @@
         </ion-item>
         <ion-item menu-close ng-click="myFavor()">
           My Favour
-        </ion-item>
-        <ion-item menu-close ng-click="mediaList()">
-          Media List
-        </ion-item>
+        </ion-item>-->
+
       </ion-list>
     </ion-content>
   </ion-side-menu>
