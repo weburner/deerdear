@@ -109,11 +109,11 @@ angular.module('starter.controllers', [])
       }, 1000);
     };
 
-    $scope.stylePage = function(){
+    $scope.stylePage = function () {
       $state.go('app.style');
     };
 
-    $scope.comments = function(){
+    $scope.comments = function () {
       $state.go('app.comments');
     };
 
@@ -122,5 +122,18 @@ angular.module('starter.controllers', [])
       paginationClickable: true,
       direction: 'vertical'
     });
+
+    $scope.mediaList = function () {
+      $state.go('app.media-list');
+    };
+
+    $scope.mediaPage = function () {
+      $state.go('app.media-page');
+    };
+
+    $scope.noComments = function () {
+      $state.go('app.no-comment');
+    }
+
 
   });
