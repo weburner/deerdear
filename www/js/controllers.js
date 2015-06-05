@@ -1,6 +1,6 @@
 angular.module('starter.controllers', [])
 
-  .controller('AppCtrl', function ($scope, $ionicModal, $timeout, $state) {
+  .controller('AppCtrl', function ($scope, $ionicModal, $timeout, $state, $ionicSlideBoxDelegate) {
 
     // With the new view caching in Ionic, Controllers are only called
     // when they are recreated or on app start, instead of every page change.
@@ -16,9 +16,13 @@ angular.module('starter.controllers', [])
 
     // Create the login modal that we will use later
     $ionicModal.fromTemplateUrl('templates/login.html', {
-      scope: $scope
+      scope: $scope,
+      animation: 'slide-in-up'
     }).then(function (modal) {
       $scope.login_modal = modal;
+      $scope.selectModal = modal;
+      $scope.selectModalSlider = $ionicSlideBoxDelegate.$getByHandle('modalSlider');
+      $scope.selectModalSlider.enableSlide(false);
     });
 
     // Triggered in the login modal to close it
@@ -31,42 +35,16 @@ angular.module('starter.controllers', [])
       $scope.login_modal.show();
     };
 
-
-    $ionicModal.fromTemplateUrl('templates/register.html', {
-      scope: $scope
-    }).then(function (modal) {
-      $scope.register_modal = modal;
-    });
-
-    // Triggered in the login modal to close it
-    $scope.closeRegister = function () {
-      $scope.register_modal.hide();
+    $scope.openRegisterSlide = function(){
+      $scope.selectModalSlider.slide(1);
     };
 
-    // Open the register modal
-    $scope.register = function () {
-      $scope.login_modal.hide();
-      $state.go('app.register');
-      //$scope.register_modal.show();
+    $scope.openForgotPasswordSlide = function(){
+      $scope.selectModalSlider.slide(2);
     };
 
-
-    $ionicModal.fromTemplateUrl('templates/forgot-password.html', {
-      scope: $scope
-    }).then(function (modal) {
-      $scope.forgot_password_modal = modal;
-    });
-
-    // Triggered in the forgotPassword modal to close it
-    $scope.closeForgotPassword = function () {
-      $scope.forgot_password_modal.hide();
-    };
-
-    // Open the forgotPassword modal
-    $scope.forgotPassword = function () {
-      $scope.login_modal.hide();
-      $state.go('app.forgot-password');
-      //$scope.forgot_password_modal.show();
+    $scope.openLoginSlide = function(){
+      $scope.selectModalSlider.slide(0);
     };
 
 
@@ -192,6 +170,13 @@ angular.module('starter.controllers', [])
 
     $scope.goToOtherPage = function(){
       alert('This will go to other page');
+    };
+
+    $scope.closeSelectModal = function () {
+      if ($scope.selectModalSlider.currentIndex() == 0)
+        $scope.selectModal.hide();
+      else
+        $scope.selectModalSlider.previous();
     };
 
     $scope.writeComment = function(){

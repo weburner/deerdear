@@ -82,24 +82,6 @@ angular.module('starter', ['ionic', 'starter.controllers'])
             controller: 'AppCtrl'
           }
         }
-      })
-      .state('app.register', {
-        url: "/register",
-        views: {
-          'menuContent': {
-            templateUrl: "templates/register.html",
-            controller: 'AppCtrl'
-          }
-        }
-      })
-      .state('app.forgot-password', {
-        url: "/forgot-password",
-        views: {
-          'menuContent': {
-            templateUrl: "templates/forgot-password.html",
-            controller: 'AppCtrl'
-          }
-        }
       });
 
 

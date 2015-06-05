@@ -1,55 +1,149 @@
 <ion-modal-view class="login_modal">
-  <!--<ion-header-bar>
+  <ion-header-bar style="display: none;">
+  </ion-header-bar>
+  <ion-content class="" style="top:0px;">
 
-  </ion-header-bar>-->
+    <ion-slide-box delegate-handle="modalSlider" show-pager="false">
+      <ion-slide class="padding">
+        <div class="padding-horizontal color_ff">
 
-  <ion-content>
-
-
-    <div class="padding-horizontal color_ff">
-
-      <div class="row" style="padding-top: 15px;">
-        <div class="col-90">
-          <h4 class="title text-center color_ff font_bold">Login</h4>
-        </div>
-        <div class="col-10">
-          <div class="buttons">
-            <button class="button button-clear" ng-click="closeLogin()">
-              <i class="ion-close" style="font-size: 24px;"></i>
-            </button>
+          <div class="row" style="padding-top: 15px;">
+            <div class="col-90">
+              <h4 class="title text-center color_ff font_bold">Login</h4>
+            </div>
+            <div class="col-10">
+              <div class="buttons">
+                <button class="button button-clear" ng-click="closeLogin()">
+                  <i class="ion-close" style="font-size: 24px;"></i>
+                </button>
+              </div>
+            </div>
           </div>
+
+          <p class="hr_line_ff"></p>
+
+          <div class="" style="margin-top: 20px;">
+            <button class="button button-outline button-block font_bold color_ff">Login with Weibo</button>
+            <button class="button button-outline button-block font_bold color_ff">Login with Wechat</button>
+          </div>
+
+          <p class="hr_line_ff" style="margin-top: 50px;"></p>
+
+          <div>
+            <div class="list">
+              <label class="item item-input margin_vertical">
+                <input type="text" placeholder="Please enter your mobile number">
+              </label>
+              <label class="item item-input">
+                <input type="password" placeholder="Please enter your password">
+              </label>
+            </div>
+            <button class="button button-outline button-block font_bold color_ff">LOGIN</button>
+          </div>
+
+          <p class="hr_line_ff" style="margin-top: 20px;"></p>
+
+          <div class="row text-center">
+            <div class="col-50 padding-vertical" ng-click="openForgotPasswordSlide()">Forgot Password</div>
+            <div class="col-50 padding-vertical" style="border-left: 1px solid #aaa;" ng-click="openRegisterSlide()">Sign Up
+            </div>
+          </div>
+
         </div>
-      </div>
+      </ion-slide>
 
-      <p class="hr_line_ff"></p>
 
-      <div class="" style="margin-top: 20px;">
-        <button class="button button-outline button-block font_bold color_ff">Login with Weibo</button>
-        <button class="button button-outline button-block font_bold color_ff">Login with Wechat</button>
-      </div>
+      <ion-slide class="padding">
+        <div class="row">
+          <div class="col-10">
+            <div class="back_btn">
+              <button ng-click="openLoginSlide()" class="button back-button buttons  button-clear header-item">
+                <i class="icon ion-ios-arrow-back"></i>
+                <!--<span class="back-text"><span class="default-title">Back</span><span class="previous-title hide"></span></span>-->
+              </button>
+            </div>
+          </div>
+          <div class="col-90 padding-top">
+            <h4 class="title text-center color_ff font_bold">Mobile Number Sign Up</h4>
+          </div>
 
-      <p class="hr_line_ff" style="margin-top: 80px;"></p>
-
-      <div>
-        <div class="list">
-          <label class="item item-input margin_vertical">
-            <input type="text" placeholder="Please enter your mobile number">
-          </label>
-          <label class="item item-input">
-            <input type="password" placeholder="Please enter your password">
-          </label>
         </div>
-        <button class="button button-outline button-block font_bold color_ff">LOGIN</button>
-      </div>
 
-      <p class="hr_line_ff" style="margin-top: 20px;"></p>
+        <div class="padding-horizontal color_ff">
 
-      <div class="row text-center">
-        <div class="col-50 padding-vertical" ng-click="forgotPassword()">Forgot Password</div>
-        <div class="col-50 padding-vertical" style="border-left: 1px solid #aaa;" ng-click="register()">Sign Up</div>
-      </div>
+          <p class="hr_line_ff"></p>
 
-    </div>
+          <div class="" style="margin-top: 20px;">
+            <div>
+              <div class="list">
+                <label class="item item-input margin_vertical">
+                  <input type="password" placeholder="Please enter your Mobile Number">
+                </label>
+
+                <button class="button button-outline button-block color_ff">Send Security Code</button>
+
+                <label class="item item-input">
+                  <input type="text" placeholder="Please enter the security number">
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <p class="" style="margin-top: 80px;"></p>
+
+          <div>
+            <div class="list">
+              <label class="item item-input margin_vertical">
+                <input type="password" placeholder="Please enter your password">
+              </label>
+              <label class="item item-input">
+                <input type="password" placeholder="Please enter your password again">
+              </label>
+            </div>
+            <button class="button button-outline button-block font_bold color_ff">SIGN UP</button>
+          </div>
+
+        </div>
+      </ion-slide>
+      <ion-slide class="padding">
+        <div class="row">
+          <div class="col-10">
+            <div class="back_btn">
+              <button ng-click="openLoginSlide()" class="button back-button buttons  button-clear header-item">
+                <i class="icon ion-ios-arrow-back"></i>
+                <!--<span class="back-text"><span class="default-title">Back</span><span class="previous-title hide"></span></span>-->
+              </button>
+            </div>
+          </div>
+          <div class="col-90 padding-top">
+            <h4 class="title text-center color_ff font_bold">Forgot Password</h4>
+          </div>
+
+        </div>
+
+
+        <div class="padding-horizontal color_ff">
+
+          <p class="hr_line_ff"></p>
+
+          <div class="" style="margin-top: 20px;">
+            <p>Please enter the mobile number you used for sign up, we'll send you a new password by text message.</p>
+          </div>
+
+          <p class="" style="margin-top: 20px;"></p>
+
+          <div>
+            <div class="list">
+              <label class="item item-input margin_vertical">
+                <input type="password" placeholder="Please enter your mobile number">
+              </label>
+            </div>
+            <button class="button button-outline button-block font_bold color_ff">SEND NEW PASSWORD</button>
+          </div>
+
+        </div>
+      </ion-slide>
+    </ion-slide-box>
 
   </ion-content>
 </ion-modal-view>
