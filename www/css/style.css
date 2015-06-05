@@ -207,3 +207,10 @@
   border-radius: 50%;
   margin: 10px;
 }
+.width_100p{
+  width: 100% !important;
+}
+
+.comment_box {
+  padding-top: 90%;
+}

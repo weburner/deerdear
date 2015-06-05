@@ -119,6 +119,21 @@ angular.module('starter.controllers', [])
       $scope.share_modal.show();
     };
 
+    $ionicModal.fromTemplateUrl('comment-modal.html', {
+      scope: $scope
+    }).then(function (modal) {
+      $scope.comment_modal = modal;
+    });
+
+    // Triggered in the Share modal to close it
+    $scope.closeCommentModal = function () {
+      $scope.comment_modal.hide();
+    };
+
+    // Open the Share modal
+    $scope.openCommentModal = function () {
+      $scope.comment_modal.show();
+    };
 
 
     // Perform the login action when the user submits the login form
@@ -180,7 +195,7 @@ angular.module('starter.controllers', [])
     };
 
     $scope.writeComment = function(){
-
+      $scope.openCommentModal();
     };
 
   });
