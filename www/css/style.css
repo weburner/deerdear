@@ -88,17 +88,16 @@
 .border_bottom {
   border-bottom: 2px solid #aaa;
 }
-
 .slider_description {
   position: absolute;
-  bottom: 10px;
+  bottom: 0px;
   background-color: rgba(255, 255, 255, 0.51);
   width: 100%;
   height: auto;
 }
 .share_slider {
   position: absolute;
-  bottom: 10px;
+  bottom: 0px;
   background-color: rgba(22, 22, 20, 0.98);
   width: 100%;
   height: auto;
@@ -126,7 +125,7 @@
   background: #000000 !important;
 }
 .swiper-slide.swiper-slide-active{
-  height: 95vh !important;
+  height: 100vh !important;
 }
 
 .swiper-container-vertical>.swiper-pagination .swiper-pagination-bullet {
