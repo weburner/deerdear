@@ -1,89 +1,378 @@
-<ion-view view-title="Media List">
+<ion-view view-title="List Under Tag">
 
-  <div class="bar bar-subheader" style="border-bottom: 1px solid #aaa;">
-    <div class="row text-center" ng-init="tab=1">
-      <div class="col-33" ng-click="tab=1">Media</div>
-      <div class="col-34" ng-click="tab=2">Style</div>
-      <div class="col-33" ng-click="tab=3">About</div>
+  <div class="bar bar-subheader" style="border-bottom: 1px solid #aaa; padding-bottom: 0px;height: 48px;">
+    <div class="row text-center no_padding">
+      <div class="col-33 padding-vertical" ng-class="{'border_bottom':(listUnderTagTab == 1)}" ng-click="showListUnderTag(1)">Media</div>
+      <div class="col-34 padding-vertical" ng-class="{'border_bottom':(listUnderTagTab == 2)}" ng-click="showListUnderTag(2)">Style</div>
+      <div class="col-33  padding-vertical" ng-class="{'border_bottom':(listUnderTagTab == 3)}" ng-click="showListUnderTag(3)">About</div>
     </div>
   </div>
 
-  <ion-content>
-
-
+  <ion-content class="media_list_page">
     <div style="margin-top: 50px">
-      <div>
-        <h4 class="text-center">Welcome to deerdear</h4>
-
-        <div class="text-center"><img src="../img/boxes.png" alt=""/></div>
-        <p class="text-center">Description</p>
-      </div>
-
-      <div class="padding-vertical">
+      <div ng-show="listUnderTagTab==1">
         <div>
-          <img src="../img/img1.png" alt="" class="full-image"/>
-          <h4 class="text-center">Article Title</h4>
+          <h4 class="text-center padding-vertical">Welcome to deerdear</h4>
 
-          <p class="text-center">Article description</p>
+          <div class="text-center"><img src="../img/boxes.png" alt=""/></div>
+          <p class="text-center">Description</p>
         </div>
 
-        <div class="row color_aa">
-          <div class="col-20 col-offset-10"><i class="icon ion-thumbsup"></i> <span>123</span></div>
-          <div class="col-20"><i class="icon ion-android-share-alt"></i> <span>123</span></div>
-          <div class="col-20"><i class="icon ion-ios-heart"></i> <span>123</span></div>
-          <div class="col-20"><i class="icon ion-android-textsms"></i> <span>123</span></div>
+        <div class="padding-vertical">
+          <div ng-click="mediaPage()">
+            <img src="../img/img1.png" alt="" class="full-image"/>
+            <h4 class="text-center">Article Title</h4>
+
+            <p class="text-center">Article description</p>
+          </div>
+
+          <div class="row color_aa">
+            <div class="col-20 col-offset-10">
+              <button class="button button-small button-clear thumbsup_icon">
+                <i class="icon ion-thumbsup"></i> <span>123</span>
+              </button>
+            </div>
+            <div class="col-20">
+              <button class="button button-small button-clear">
+                <i class="icon ion-android-share-alt"></i> <span>123</span>
+              </button>
+            </div>
+            <div class="col-20">
+              <button class="button button-small button-clear heart_icon">
+                <i class="icon ion-ios-heart"></i> <span>123</span>
+              </button>
+            </div>
+            <div class="col-20">
+              <button class="button button-small button-clear" ng-click="comments()">
+                <i class="icon ion-android-textsms"></i> <span>123</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="padding-vertical">
+          <div ng-click="mediaPage()">
+            <img src="../img/img2.png" alt="" class="full-image"/>
+            <h4 class="text-center">Article Title</h4>
+
+            <p class="text-center">Article description</p>
+          </div>
+
+          <div class="row color_aa">
+            <div class="col-20 col-offset-10">
+              <button class="button button-small button-clear thumbsup_icon">
+                <i class="icon ion-thumbsup"></i> <span>123</span>
+              </button>
+            </div>
+            <div class="col-20">
+              <button class="button button-small button-clear">
+                <i class="icon ion-android-share-alt"></i> <span>123</span>
+              </button>
+            </div>
+            <div class="col-20">
+              <button class="button button-small button-clear heart_icon">
+                <i class="icon ion-ios-heart"></i> <span>123</span>
+              </button>
+            </div>
+            <div class="col-20">
+              <button class="button button-small button-clear" ng-click="noComments()">
+                <i class="icon ion-android-textsms"></i> <span>0</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="padding-vertical">
+          <div ng-click="mediaPage()">
+            <img src="../img/img3.png" alt="" class="full-image"/>
+            <h4 class="text-center">Article Title</h4>
+
+            <p class="text-center">Article description</p>
+          </div>
+
+          <div class="row color_aa">
+            <div class="col-20 col-offset-10">
+              <button class="button button-small button-clear thumbsup_icon">
+                <i class="icon ion-thumbsup"></i> <span>123</span>
+              </button>
+            </div>
+            <div class="col-20">
+              <button class="button button-small button-clear">
+                <i class="icon ion-android-share-alt"></i> <span>123</span>
+              </button>
+            </div>
+            <div class="col-20">
+              <button class="button button-small button-clear heart_icon">
+                <i class="icon ion-ios-heart"></i> <span>123</span>
+              </button>
+            </div>
+            <div class="col-20">
+              <button class="button button-small button-clear" ng-click="comments()">
+                <i class="icon ion-android-textsms"></i> <span>123</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="padding-vertical">
+          <div ng-click="mediaPage()">
+            <img src="../img/img1.png" alt="" class="full-image"/>
+            <h4 class="text-center">Article Title</h4>
+
+            <p class="text-center">Article description</p>
+          </div>
+
+          <div class="row color_aa">
+            <div class="col-20 col-offset-10">
+              <button class="button button-small button-clear thumbsup_icon">
+                <i class="icon ion-thumbsup"></i> <span>123</span>
+              </button>
+            </div>
+            <div class="col-20">
+              <button class="button button-small button-clear">
+                <i class="icon ion-android-share-alt"></i> <span>123</span>
+              </button>
+            </div>
+            <div class="col-20">
+              <button class="button button-small button-clear heart_icon">
+                <i class="icon ion-ios-heart"></i> <span>123</span>
+              </button>
+            </div>
+            <div class="col-20">
+              <button class="button button-small button-clear" ng-click="noComments()">
+                <i class="icon ion-android-textsms"></i> <span>0</span>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="padding-vertical">
+      <div ng-show="listUnderTagTab==2">
         <div>
-          <img src="../img/img2.png" alt="" class="full-image"/>
-          <h4 class="text-center">Article Title</h4>
+          <h4 class="text-center padding-vertical">Welcome to deerdear</h4>
 
-          <p class="text-center">Article description</p>
+          <div class="text-center"><img src="../img/boxes.png" alt=""/></div>
+          <p class="text-center">Description</p>
         </div>
 
-        <div class="row color_aa">
-          <div class="col-20 col-offset-10"><i class="icon ion-thumbsup"></i> <span>123</span></div>
-          <div class="col-20"><i class="icon ion-android-share-alt"></i> <span>123</span></div>
-          <div class="col-20"><i class="icon ion-ios-heart"></i> <span>123</span></div>
-          <div class="col-20"><i class="icon ion-android-textsms"></i> <span>123</span></div>
+        <div class="padding-vertical">
+          <div ng-click="stylePage()">
+            <img src="../img/item6.png" alt="" class="full-image"/>
+
+            <p class="text-center">1/1/2015 &nbsp; 12:12</p>
+
+            <p class="text-center">Article description</p>
+          </div>
+
+          <div class="row color_aa">
+            <div class="col-20 col-offset-10">
+              <button class="button button-small button-clear thumbsup_icon">
+                <i class="icon ion-thumbsup"></i> <span>123</span>
+              </button>
+            </div>
+            <div class="col-20">
+              <button class="button button-small button-clear">
+                <i class="icon ion-android-share-alt"></i> <span>123</span>
+              </button>
+            </div>
+            <div class="col-20">
+              <button class="button button-small button-clear heart_icon">
+                <i class="icon ion-ios-heart"></i> <span>123</span>
+              </button>
+            </div>
+            <div class="col-20">
+              <button class="button button-small button-clear" ng-click="comments()">
+                <i class="icon ion-android-textsms"></i> <span>123</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="padding-vertical">
+          <div>
+            <img src="../img/img2.png" alt="" class="full-image"/>
+
+            <p class="text-center">1/1/2015 &nbsp; 12:12</p>
+
+            <p class="text-center">Article description</p>
+          </div>
+
+          <div class="row color_aa">
+            <div class="col-20 col-offset-10">
+              <button class="button button-small button-clear thumbsup_icon">
+                <i class="icon ion-thumbsup"></i> <span>123</span>
+              </button>
+            </div>
+            <div class="col-20">
+              <button class="button button-small button-clear">
+                <i class="icon ion-android-share-alt"></i> <span>123</span>
+              </button>
+            </div>
+            <div class="col-20">
+              <button class="button button-small button-clear heart_icon">
+                <i class="icon ion-ios-heart"></i> <span>123</span>
+              </button>
+            </div>
+            <div class="col-20">
+              <button class="button button-small button-clear" ng-click="noComments()">
+                <i class="icon ion-android-textsms"></i> <span>0</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="padding-vertical">
+          <div>
+            <img src="../img/item7.png" alt="" class="full-image"/>
+
+            <p class="text-center">1/1/2015 &nbsp; 12:12</p>
+
+            <p class="text-center">Article description</p>
+          </div>
+
+          <div class="row color_aa">
+            <div class="col-20 col-offset-10">
+              <button class="button button-small button-clear thumbsup_icon">
+                <i class="icon ion-thumbsup"></i> <span>123</span>
+              </button>
+            </div>
+            <div class="col-20">
+              <button class="button button-small button-clear">
+                <i class="icon ion-android-share-alt"></i> <span>123</span>
+              </button>
+            </div>
+            <div class="col-20">
+              <button class="button button-small button-clear heart_icon">
+                <i class="icon ion-ios-heart"></i> <span>123</span>
+              </button>
+            </div>
+            <div class="col-20">
+              <button class="button button-small button-clear" ng-click="comments()">
+                <i class="icon ion-android-textsms"></i> <span>123</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="padding-vertical">
+          <div>
+            <img src="../img/item6.png" alt="" class="full-image"/>
+
+            <p class="text-center">1/1/2015 &nbsp; 12:12</p>
+
+            <p class="text-center">Article description</p>
+          </div>
+
+          <div class="row color_aa">
+            <div class="col-20 col-offset-10">
+              <button class="button button-small button-clear thumbsup_icon">
+                <i class="icon ion-thumbsup"></i> <span>123</span>
+              </button>
+            </div>
+            <div class="col-20">
+              <button class="button button-small button-clear">
+                <i class="icon ion-android-share-alt"></i> <span>123</span>
+              </button>
+            </div>
+            <div class="col-20">
+              <button class="button button-small button-clear heart_icon">
+                <i class="icon ion-ios-heart"></i> <span>123</span>
+              </button>
+            </div>
+            <div class="col-20">
+              <button class="button button-small button-clear" ng-click="noComments()">
+                <i class="icon ion-android-textsms"></i> <span>0</span>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="padding-vertical">
+      <div ng-show="listUnderTagTab==3">
         <div>
-          <img src="../img/img3.png" alt="" class="full-image"/>
-          <h4 class="text-center">Article Title</h4>
+          <div class="padding-horizontal">
+            <h3 class="text-center padding-vertical">THE FASION WORLD ONLINE</h3>
 
-          <p class="text-center">Article description</p>
+            <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus eveniet pariatur quo sed.
+              Aliquam
+              distinctio esse illo odio similique tempora vel voluptate? Aliquam amet blanditiis impedit natus, nesciunt
+              odio sit.</p>
+
+            <div class="text-center">
+              <img src="../img/boxes.png" alt=""/>
+            </div>
+
+            <h4 class="text-center">FASHION ON deerdear</h4>
+
+            <p class="text-center font_bold">Description</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi beatae est et eum exercitationem
+              facilis
+              ipsam iste libero minus nobis non provident quasi quod repellendus rerum, sequi similique temporibus!</p>
+
+          </div>
+
+          <div class="padding-vertical">
+            <img src="../img/about_img1.png" alt="" class="full-image"/>
+            <div class="text-center padding-horizontal">This is a sample description</div>
+          </div>
+
+          <div class="padding-vertical text-center">
+            <img src="../img/about_img2.png" alt="" class="width_80p"/>
+            <div class="text-center padding-horizontal">This is a sample description</div>
+          </div>
+
+          <div class="padding-vertical">
+            <img src="../img/about_img3.png" alt="" class="full-image"/>
+            <div class="text-center padding-horizontal">This is a sample description</div>
+          </div>
+
+          <div class="padding-vertical text-center">
+            <img src="../img/about_img4.png" alt="" class="width_80p"/>
+            <div class="text-center padding-horizontal">This is a sample description</div>
+          </div>
+
         </div>
 
-        <div class="row color_aa">
-          <div class="col-20 col-offset-10"><i class="icon ion-thumbsup"></i> <span>123</span></div>
-          <div class="col-20"><i class="icon ion-android-share-alt"></i> <span>123</span></div>
-          <div class="col-20"><i class="icon ion-ios-heart"></i> <span>123</span></div>
-          <div class="col-20"><i class="icon ion-android-textsms"></i> <span>123</span></div>
+        <div class="padding-horizontal">
+          <div class="text-center">
+            <img src="../img/boxes.png" alt=""/>
+          </div>
+
+          <h4 class="text-center">FASHION ON deerdear</h4>
+
+          <p class="text-center font_bold">Description</p>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi beatae est et eum exercitationem
+            facilis
+            ipsam iste libero minus nobis non provident quasi quod repellendus rerum, sequi similique temporibus!</p>
+
         </div>
+
+        <div class="padding-vertical">
+          <img src="../img/about_img1.png" alt="" class="full-image"/>
+          <div class="text-center padding-horizontal">This is a sample description</div>
+        </div>
+
+        <div class="padding-vertical text-center">
+          <img src="../img/about_img2.png" alt="" class="width_80p"/>
+          <div class="text-center padding-horizontal">This is a sample description</div>
+        </div>
+
+        <div class="padding-vertical">
+          <img src="../img/about_img3.png" alt="" class="full-image"/>
+          <div class="text-center padding-horizontal">This is a sample description</div>
+        </div>
+
+        <div class="padding-vertical text-center">
+          <img src="../img/about_img4.png" alt="" class="width_80p"/>
+          <div class="text-center padding-horizontal">This is a sample description</div>
+        </div>
+
+
       </div>
 
-      <div class="padding-vertical">
-        <div>
-          <img src="../img/img1.png" alt="" class="full-image"/>
-          <h4 class="text-center">Article Title</h4>
-
-          <p class="text-center">Article description</p>
-        </div>
-
-        <div class="row color_aa">
-          <div class="col-20 col-offset-10"><i class="icon ion-thumbsup"></i> <span>123</span></div>
-          <div class="col-20"><i class="icon ion-android-share-alt"></i> <span>123</span></div>
-          <div class="col-20"><i class="icon ion-ios-heart"></i> <span>123</span></div>
-          <div class="col-20"><i class="icon ion-android-textsms"></i> <span>123</span></div>
-        </div>
-      </div>
     </div>
-
   </ion-content>
 
 </ion-view>

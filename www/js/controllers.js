@@ -9,6 +9,8 @@ angular.module('starter.controllers', [])
     //$scope.$on('$ionicView.enter', function(e) {
     //});
 
+    console.log('In AppCtrl');
+
     // Form data for the login modal
     $scope.loginData = {};
 
@@ -43,7 +45,9 @@ angular.module('starter.controllers', [])
 
     // Open the register modal
     $scope.register = function () {
-      $scope.register_modal.show();
+      $scope.login_modal.hide();
+      $state.go('app.register');
+      //$scope.register_modal.show();
     };
 
 
@@ -60,7 +64,9 @@ angular.module('starter.controllers', [])
 
     // Open the forgotPassword modal
     $scope.forgotPassword = function () {
-      $scope.forgot_password_modal.show();
+      $scope.login_modal.hide();
+      $state.go('app.forgot-password');
+      //$scope.forgot_password_modal.show();
     };
 
 
@@ -113,8 +119,8 @@ angular.module('starter.controllers', [])
       $state.go('app.style');
     };
 
-    $scope.comments = function () {
-      $state.go('app.comments');
+    $scope.listUnderTag = function(){
+      $state.go('app.list-under-tag');
     };
 
     var swiper = new Swiper('.swiper-container', {
@@ -127,13 +133,37 @@ angular.module('starter.controllers', [])
       $state.go('app.media-list');
     };
 
+    $scope.mediaListTab = 1;
+    $scope.listUnderTagTab = 1;
+
+    $scope.showTab = function(val){
+      $state.go('app.media-list');
+      $scope.mediaListTab = val;
+    };
+
+    $scope.showListUnderTag = function(val){
+      $state.go('app.list-under-tag');
+      $scope.listUnderTagTab = val;
+    };
+
     $scope.mediaPage = function () {
       $state.go('app.media-page');
     };
 
+    $scope.comments = function () {
+      $state.go('app.comments');
+    };
+
     $scope.noComments = function () {
       $state.go('app.no-comment');
-    }
+    };
 
+    $scope.goToOtherPage = function(){
+      alert('This will go to other page');
+    };
+
+    $scope.writeComment = function(){
+
+    };
 
   });

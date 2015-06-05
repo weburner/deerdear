@@ -1,6 +1,8 @@
 <ion-view view-title="Comments">
 
-  <ion-content>
+  <ion-nav-bar style="display: none;"></ion-nav-bar>
+
+  <ion-content style="top: 0px;">
     <div class="comments_page">
 
       <ul class="list">
@@ -85,12 +87,12 @@
   <div class="bar bar-footer">
     <div class="row">
       <div class="col-25">
-        <div class="padding-horizontal" style="font-size: 30px;">
+        <div class="padding-horizontal" style="font-size: 30px;" ng-click="$ionicGoBack()">
           <i class="icon ion-ios-arrow-left"></i>
         </div>
       </div>
-      <div class="col-offset-50 col-25">
-        <div class="padding-horizontal" style="font-size: 30px;">
+      <div class="col-offset-50 col-25 text-center">
+        <div class="padding-horizontal" style="font-size: 30px;" ng-click="writeComment()">
           <i class="icon ion-ios-chatboxes-outline"></i>
         </div>
       </div>

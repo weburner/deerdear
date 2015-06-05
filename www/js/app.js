@@ -29,15 +29,6 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         templateUrl: "templates/menu.html",
         controller: 'AppCtrl'
       })
-
-      .state('app.home', {
-        url: "/home",
-        views: {
-          'menuContent': {
-            templateUrl: "templates/home.html"
-          }
-        }
-      })
       .state('app.media-page', {
         url: "/media-page",
         views: {
@@ -52,7 +43,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         views: {
           'menuContent': {
             templateUrl: "templates/media-list.html",
-            controller: 'AppCtrl'
+            //controller: 'AppCtrl'
           }
         }
       })
@@ -88,6 +79,24 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         views: {
           'menuContent': {
             templateUrl: "templates/list-under-tag.html",
+            controller: 'AppCtrl'
+          }
+        }
+      })
+      .state('app.register', {
+        url: "/register",
+        views: {
+          'menuContent': {
+            templateUrl: "templates/register.html",
+            controller: 'AppCtrl'
+          }
+        }
+      })
+      .state('app.forgot-password', {
+        url: "/forgot-password",
+        views: {
+          'menuContent': {
+            templateUrl: "templates/forgot-password.html",
             controller: 'AppCtrl'
           }
         }

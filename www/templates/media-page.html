@@ -1,6 +1,37 @@
 <ion-view view-title="Media Page">
 
-  <ion-content class="media_page">
+  <ion-nav-bar style="display: none;"></ion-nav-bar>
+
+  <ion-content class="media_page" style="top: 0px;">
+
+    <div class="back_btn">
+      <button ng-click="$ionicGoBack()" class="button back-button buttons  button-clear header-item">
+        <i class="icon ion-ios-arrow-back"></i>
+        <!--<span class="back-text"><span class="default-title">Back</span><span class="previous-title hide"></span></span>-->
+      </button>
+    </div>
+    <div class="fixed_icons">
+      <span class="col-20 col-offset-20">
+        <button class="button button-small button-clear thumbsup_icon color_ff">
+          <i class="icon ion-thumbsup"></i> <span>123</span>
+        </button>
+      </span>
+      <span class="col-20">
+        <button class="button button-small button-clear color_ff" ng-click="share_slider = !share_slider">
+          <i class="icon ion-android-share-alt"></i> <span>123</span>
+        </button>
+      </span>
+      <span class="col-20">
+        <button class="button button-small button-clear heart_icon color_ff">
+          <i class="icon ion-ios-heart"></i> <span>123</span>
+        </button>
+      </span>
+      <span class="col-20" ng-click="noComments()">
+        <button class="button button-small button-clear color_ff">
+          <i class="icon ion-android-textsms"></i> <span>123</span>
+        </button>
+      </span>
+    </div>
 
     <div>
       <div class="swiper-container">
@@ -10,7 +41,7 @@
             <div>
               <img src="../img/media_1.png" alt="" class="full-image"/>
 
-              <div class="slider_icons">
+              <!--<div class="slider_icons">
                 <span class="col-20 col-offset-20">
                   <button class="button button-small button-clear thumbsup_icon color_ff">
                     <i class="icon ion-thumbsup"></i> <span>123</span>
@@ -31,7 +62,7 @@
                     <i class="icon ion-android-textsms"></i> <span>123</span>
                   </button>
                 </span>
-              </div>
+              </div>-->
               <div class="slider_description">
                 <h4>Title</h4>
 
@@ -74,7 +105,7 @@
             <div>
               <img src="../img/media_2.png" alt="" class="full-image"/>
 
-              <div class="slider_icons">
+              <!--<div class="slider_icons">
               <span class="col-20 col-offset-20">
                 <button class="button button-small button-clear thumbsup_icon color_ff">
                   <i class="icon ion-thumbsup"></i> <span>123</span>
@@ -95,7 +126,7 @@
                   <i class="icon ion-android-textsms"></i> <span>123</span>
                 </button>
               </span>
-              </div>
+              </div>-->
               <div class="slider_description">
                 <h4>Title</h4>
 
@@ -110,7 +141,7 @@
             <div>
               <img src="../img/media_1.png" alt="" class="full-image"/>
 
-              <div class="slider_icons">
+              <!--<div class="slider_icons">
               <span class="col-20 col-offset-20">
                 <button class="button button-small button-clear thumbsup_icon color_ff">
                   <i class="icon ion-thumbsup"></i> <span>123</span>
@@ -131,7 +162,7 @@
                   <i class="icon ion-android-textsms"></i> <span>123</span>
                 </button>
               </span>
-              </div>
+              </div>-->
               <div class="slider_description">
                 <h4>Title</h4>
 
@@ -146,7 +177,7 @@
             <div>
               <img src="../img/media_2.png" alt="" class="full-image"/>
 
-              <div class="slider_icons">
+              <!--<div class="slider_icons">
               <span class="col-20 col-offset-20">
                 <button class="button button-small button-clear thumbsup_icon color_ff">
                   <i class="icon ion-thumbsup"></i> <span>123</span>
@@ -167,7 +198,7 @@
                   <i class="icon ion-android-textsms"></i> <span>123</span>
                 </button>
               </span>
-              </div>
+              </div>-->
               <div class="slider_description">
                 <h4>Title</h4>
 

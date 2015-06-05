@@ -13,10 +13,12 @@
   border-top: 1px solid #AAAAAA;
 }
 
-.login_modal, .register_modal, .forgot_password_modal, .my_favour_modal {
-  background-color: rgba(0, 0, 0, 0.90);
+.login_modal,  .my_favour_modal {
+  background-color: rgba(63, 63, 63, 0.95);
 }
-
+.register_modal, .forgot_password_modal {
+  background-color: rgba(0, 0, 0, 0.60);
+}
 .color_ff {
   color: #ffffff !important;
 }
@@ -77,6 +79,9 @@
 .comments_page .item {
   padding: 5px;
 }
+.font_11px {
+  font-size: 11px !important;
+}
 .font_12px {
   font-size: 12px !important;
 }
@@ -98,18 +103,24 @@
   width: 100%;
   height: auto;
 }
-.slider_icons {
+/*.slider_icons {
   position: absolute;
   top: 5px;
   width: 100%;
+}*/
+.media_page .fixed_icons {
+  position: fixed;
+  z-index: 100;
+  padding-top: 19px;
+  right: 18px;
 }
 .width_80p {
   width: 80%;
 }
 
 .swiper-pagination{
-  position: absolute !important;
-  top:5% !important;
+  top: 200px !important;
+  position: fixed !important;
 }
 .swiper-pagination-bullet-active{
   background: #000000 !important;
@@ -140,4 +151,14 @@
 
 .back-text, span.default-title {
   display: none !important;
+}
+.style_page .like_icon.activated {
+  color: #F14A00;
+}
+.media_page .back_btn {
+  position: fixed;
+  z-index: 100;
+  background-color: #222222;
+  border-radius: 50%;
+  margin: 10px;
 }

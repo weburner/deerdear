@@ -1,6 +1,8 @@
 <ion-view view-title="No Comment">
 
-  <ion-content>
+  <ion-nav-bar style="display: none;"></ion-nav-bar>
+
+  <ion-content style="top: 0px;">
 
     <div class="text-center padding-vertical" style="padding-top: 25%">
       <img src="../img/logo_big.png" alt="Logo" width="120px"/>
@@ -11,13 +13,17 @@
 
   <div class="bar bar-footer">
     <div class="row">
-      <div class="col-offset-80 col-20">
+      <div class="col-25">
+        <div class="padding-horizontal" style="font-size: 30px;" ng-click="$ionicGoBack()">
+          <i class="icon ion-ios-arrow-left"></i>
+        </div>
+      </div>
+      <div class="col-offset-50 col-25 text-center">
         <div class="padding-horizontal" style="font-size: 30px;" ng-click="comments()">
           <i class="icon ion-android-textsms"></i>
         </div>
       </div>
     </div>
-
   </div>
 
 </ion-view>
