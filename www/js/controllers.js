@@ -119,7 +119,7 @@ angular.module('starter.controllers', [])
       $scope.share_modal.show();
     };
 
-    $ionicModal.fromTemplateUrl('comment-modal.html', {
+    $ionicModal.fromTemplateUrl('templates/comment-modal.html', {
       scope: $scope
     }).then(function (modal) {
       $scope.comment_modal = modal;
