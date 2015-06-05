@@ -103,6 +103,23 @@ angular.module('starter.controllers', [])
       $scope.my_favor.show();
     };
 
+    $ionicModal.fromTemplateUrl('share-modal.html', {
+      scope: $scope
+    }).then(function (modal) {
+      $scope.share_modal = modal;
+    });
+
+    // Triggered in the Share modal to close it
+    $scope.closeShareModal = function () {
+      $scope.share_modal.hide();
+    };
+
+    // Open the Share modal
+    $scope.openShareModal = function () {
+      $scope.share_modal.show();
+    };
+
+
 
     // Perform the login action when the user submits the login form
     $scope.doLogin = function () {

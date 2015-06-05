@@ -95,18 +95,29 @@
   width: 100%;
   height: auto;
 }
-.share_slider {
-  position: absolute;
-  bottom: 0px;
+/*.share_slider {
+  position: fixed;
+  z-index: 1001;
+  top: 10%;
   background-color: rgba(22, 22, 20, 0.98);
-  width: 100%;
-  height: auto;
-}
+}*/
 /*.slider_icons {
   position: absolute;
   top: 5px;
   width: 100%;
 }*/
+.share_modal_view {
+  background-color: rgba(0, 0, 0, 0.50);
+}
+.share_modal_content {
+
+}
+.share_modal_main_content {
+  position: fixed;
+  z-index: 1003;
+  top: 52vh;
+  background-color: rgba(0, 0, 0, 0.90);
+}
 .media_page .fixed_icons {
   position: fixed;
   z-index: 100;
