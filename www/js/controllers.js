@@ -103,7 +103,7 @@ angular.module('starter.controllers', [])
       $scope.my_favor.show();
     };
 
-    $ionicModal.fromTemplateUrl('share-modal.html', {
+    $ionicModal.fromTemplateUrl('templates/share-modal.html', {
       scope: $scope
     }).then(function (modal) {
       $scope.share_modal = modal;
@@ -197,5 +197,15 @@ angular.module('starter.controllers', [])
     $scope.writeComment = function(){
       $scope.openCommentModal();
     };
+
+    /*$scope.selectModalSlider.slide(0);
+    $scope.itemSelected = false;
+    $scope.categoryList = [
+      {id: 1, title: 'Category A'},
+      {id: 2, title: 'Category B'},
+      {id: 3, title: 'Category C'}
+    ];
+    $scope.selectModal.show();*/
+
 
   });
