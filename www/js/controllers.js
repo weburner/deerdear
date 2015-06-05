@@ -1,6 +1,6 @@
 angular.module('starter.controllers', [])
 
-  .controller('AppCtrl', function ($scope, $ionicModal, $timeout, $state, $ionicSlideBoxDelegate) {
+  .controller('AppCtrl', function ($scope, $ionicModal, $timeout, $state, $ionicSlideBoxDelegate, $ionicPlatform) {
 
     // With the new view caching in Ionic, Controllers are only called
     // when they are recreated or on app start, instead of every page change.
@@ -34,6 +34,13 @@ angular.module('starter.controllers', [])
     $scope.login = function () {
       $scope.login_modal.show();
     };
+
+    $scope.$on('$stateChangeStart', function(event, toState, toParams, fromState, fromParams){
+      console.log('$stateChangeStart');
+      $scope.closeLogin();
+      $scope.closeShareModal();
+      $scope.closeCommentModal();
+    });
 
     $scope.openRegisterSlide = function(){
       $scope.selectModalSlider.slide(1);
@@ -113,18 +120,6 @@ angular.module('starter.controllers', [])
       $scope.comment_modal.show();
     };
 
-
-    // Perform the login action when the user submits the login form
-    $scope.doLogin = function () {
-      console.log('Doing login', $scope.loginData);
-
-      // Simulate a login delay. Remove this and replace with your login
-      // code if using a login system
-      $timeout(function () {
-        $scope.closeLogin();
-      }, 1000);
-    };
-
     $scope.stylePage = function () {
       $state.go('app.style');
     };
@@ -172,25 +167,8 @@ angular.module('starter.controllers', [])
       alert('This will go to other page');
     };
 
-    $scope.closeSelectModal = function () {
-      if ($scope.selectModalSlider.currentIndex() == 0)
-        $scope.selectModal.hide();
-      else
-        $scope.selectModalSlider.previous();
-    };
-
     $scope.writeComment = function(){
       $scope.openCommentModal();
     };
-
-    /*$scope.selectModalSlider.slide(0);
-    $scope.itemSelected = false;
-    $scope.categoryList = [
-      {id: 1, title: 'Category A'},
-      {id: 2, title: 'Category B'},
-      {id: 3, title: 'Category C'}
-    ];
-    $scope.selectModal.show();*/
-
 
   });
