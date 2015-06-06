@@ -294,6 +294,15 @@
   display: block;
 }
 
+.profile_image {
+  background-color: white;
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  border-radius: 50%;
+  color: black;
+}
+
 @font-face {
   font-family: 'HelveticaNeue-Thin';
   font-style: normal;
