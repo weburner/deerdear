@@ -1,14 +1,27 @@
 /* Empty. Add your own CSS if you like */
 
-
 /*Over riding CSS START*/
 
 .media_list_header .bar {
   height: 80px;
 }
+
+.media_list_page .four_icons .icon {
+  color: #AAAAAA;
+}
+
+.media_list_page .four_icons .activated .icon, .media_list_page .four_icons .activated {
+  color: #444;
+}
+
+.media_list_tabs {
+  padding: 0 20%;
+}
+
 .media_list_tabs .tab-item {
   color: #000000 !important;
 }
+
 .media_list_header .bar .title {
   height: 80px;
 }
@@ -38,6 +51,14 @@
 
 .color_ff {
   color: #ffffff !important;
+}
+
+.color_55 {
+  color: #555 !important;
+}
+
+.color_88 {
+  color: #888 !important;
 }
 
 .color_aa {
@@ -74,16 +95,28 @@
   background-color: inherit;
 }
 
-.font_16px {
-  font-size: 16px !important;
+.font_12px {
+  font-size: 12px !important;
 }
 
 .font_14px {
   font-size: 14px !important;
 }
 
-.font_12px {
-  font-size: 12px !important;
+.font_16px {
+  font-size: 16px !important;
+}
+
+.font_20px {
+  font-size: 20px !important;
+}
+
+.font_24px {
+  font-size: 24px !important;
+}
+
+.font_28px {
+  font-size: 28px !important;
 }
 
 .style_page .card {
@@ -113,6 +146,10 @@
 
 .font_12px {
   font-size: 12px !important;
+}
+
+.font_30px {
+  font-size: 30px !important;
 }
 
 .active_tab_border_bottom {
@@ -222,10 +259,59 @@
   border-radius: 50%;
   margin: 10px;
 }
-.width_100p{
+
+.width_100p {
   width: 100% !important;
 }
 
 .comment_box {
   padding-top: 90%;
+}
+
+.active_tab {
+}
+
+.active_tab:before {
+  content: "";
+  position: absolute;
+  bottom: -9px;
+  left: 35%;
+  border-width: 9px 9px 0 10px;
+  border-style: solid;
+  border-color: #B3B3B3 transparent;
+  display: block;
+  width: 0;
+}
+
+.active_tab:after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 35%;
+  border-width: 9px 9px 0 10px;
+  border-style: solid;
+  border-color: #fff transparent;
+  display: block;
+}
+
+@font-face {
+  font-family: 'HelveticaNeue-Thin';
+  font-style: normal;
+  font-weight: normal;
+  src: local('HelveticaNeue-Thin'), url('../css/fonts/HelveticaNeue-Thin.otf');
+}
+
+.helvetica_neue_thin {
+  font-family: 'HelveticaNeue-Thin';
+}
+
+@font-face {
+  font-family: 'HelveticaNeue-UltraLight';
+  font-style: normal;
+  font-weight: normal;
+  src: local('HelveticaNeue-UltraLight'), url('../css/fonts/HelveticaNeue-UltraLight.otf');
+}
+
+.helvetica_neue_ultra_light {
+  font-family: 'HelveticaNeue-UltraLight';
 }

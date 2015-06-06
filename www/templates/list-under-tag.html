@@ -12,88 +12,80 @@
 
   <div class="tabs-striped tabs-top tabs-background-light tabs-color-light">
     <div class="tabs media_list_tabs" style="margin-top: 40px;">
-      <div class="tab-item" ng-class="{'active':(listUnderTagTab == 1)}" ng-click="showListUnderTag(1)">
-        Media
+      <div style="position: relative; padding: 0 15px;">
+        <div class="tab-item" ng-class="{'active_tab':(listUnderTagTab == 1)}" ng-click="showListUnderTag(1)">
+          Media
+        </div>
       </div>
-      <div class="tab-item" ng-class="{'active':(listUnderTagTab == 2)}" ng-click="showListUnderTag(2)">
-        Style
+      <div style="position: relative; padding: 0 15px;">
+        <div class="tab-item" ng-class="{'active_tab':(listUnderTagTab == 2)}" ng-click="showListUnderTag(2)">
+          Style
+        </div>
       </div>
-      <div class="tab-item" ng-class="{'active':(listUnderTagTab == 3)}" ng-click="showListUnderTag(3)">
-        About
+      <div style="position: relative; padding: 0 15px;">
+        <div class="tab-item" ng-class="{'active_tab':(listUnderTagTab == 3)}" ng-click="showListUnderTag(3)">
+          About
+        </div>
       </div>
     </div>
+
   </div>
-  
+
   <ion-content class="media_list_page"  style="margin-top: 90px">
     <div>
       <div ng-show="listUnderTagTab==1">
         <div>
-          <h4 class="text-center padding-vertical">Welcome to deerdear</h4>
+          <h4 class="text-center padding-vertical helvetica_neue_ultra_light font_28px">Welcome to deerdear</h4>
 
           <div class="text-center"><img src="../img/boxes.png" alt=""/></div>
-          <p class="text-center">Description</p>
+          <p class="text-center font_20px padding-vertical color_55">This is some description</p>
         </div>
 
         <div class="padding-vertical">
           <div ng-click="mediaPage()">
             <img src="../img/img1.png" alt="" class="full-image"/>
-            <h4 class="text-center">Article Title</h4>
+            <h4 class="text-center color_88">Article Title</h4>
 
             <p class="text-center">Article description</p>
           </div>
 
-          <div class="row color_aa">
+          <div class="row color_aa four_icons">
             <div class="col-20 col-offset-10">
-              <button class="button button-small button-clear thumbsup_icon">
-                <i class="icon ion-thumbsup"></i> <span>123</span>
-              </button>
+              <div ng-click=""><i class="icon ion-thumbsup"></i> <span>123</span></div>
             </div>
             <div class="col-20">
-              <button class="button button-small button-clear">
-                <i class="icon ion-android-share-alt"></i> <span>123</span>
-              </button>
+              <div ng-click=""><i class="icon ion-android-share-alt"></i> <span>123</span></div>
             </div>
             <div class="col-20">
-              <button class="button button-small button-clear heart_icon">
-                <i class="icon ion-ios-heart"></i> <span>123</span>
-              </button>
+              <div ng-click=""><i class="icon ion-ios-heart"></i> <span>123</span></div>
             </div>
             <div class="col-20">
-              <button class="button button-small button-clear" ng-click="comments()">
-                <i class="icon ion-android-textsms"></i> <span>123</span>
-              </button>
+              <div ng-click="comments()"><i class="icon ion-android-textsms"></i> <span>123</span></div>
             </div>
+          </div>
           </div>
         </div>
 
         <div class="padding-vertical">
           <div ng-click="mediaPage()">
             <img src="../img/img2.png" alt="" class="full-image"/>
-            <h4 class="text-center">Article Title</h4>
+            <h4 class="text-center color_88">Article Title</h4>
 
             <p class="text-center">Article description</p>
           </div>
 
-          <div class="row color_aa">
+          <div class="row color_aa four_icons">
             <div class="col-20 col-offset-10">
-              <button class="button button-small button-clear thumbsup_icon">
-                <i class="icon ion-thumbsup"></i> <span>123</span>
-              </button>
+              <div ng-click=""><i class="icon ion-thumbsup"></i> <span>123</span></div>
             </div>
             <div class="col-20">
-              <button class="button button-small button-clear">
-                <i class="icon ion-android-share-alt"></i> <span>123</span>
-              </button>
+              <div ng-click=""><i class="icon ion-android-share-alt"></i> <span>123</span></div>
             </div>
             <div class="col-20">
-              <button class="button button-small button-clear heart_icon">
-                <i class="icon ion-ios-heart"></i> <span>123</span>
-              </button>
+              <div ng-click=""><i class="icon ion-ios-heart"></i> <span>123</span></div>
             </div>
             <div class="col-20">
-              <button class="button button-small button-clear" ng-click="noComments()">
-                <i class="icon ion-android-textsms"></i> <span>0</span>
-              </button>
+              <div ng-click="noComments()"><i class="icon ion-android-textsms"></i> <span>0</span></div>
             </div>
           </div>
         </div>
@@ -101,31 +93,23 @@
         <div class="padding-vertical">
           <div ng-click="mediaPage()">
             <img src="../img/img3.png" alt="" class="full-image"/>
-            <h4 class="text-center">Article Title</h4>
+            <h4 class="text-center color_88">Article Title</h4>
 
             <p class="text-center">Article description</p>
           </div>
 
-          <div class="row color_aa">
+          <div class="row color_aa four_icons">
             <div class="col-20 col-offset-10">
-              <button class="button button-small button-clear thumbsup_icon">
-                <i class="icon ion-thumbsup"></i> <span>123</span>
-              </button>
+              <div ng-click=""><i class="icon ion-thumbsup"></i> <span>123</span></div>
             </div>
             <div class="col-20">
-              <button class="button button-small button-clear">
-                <i class="icon ion-android-share-alt"></i> <span>123</span>
-              </button>
+              <div ng-click=""><i class="icon ion-android-share-alt"></i> <span>123</span></div>
             </div>
             <div class="col-20">
-              <button class="button button-small button-clear heart_icon">
-                <i class="icon ion-ios-heart"></i> <span>123</span>
-              </button>
+              <div ng-click=""><i class="icon ion-ios-heart"></i> <span>123</span></div>
             </div>
             <div class="col-20">
-              <button class="button button-small button-clear" ng-click="comments()">
-                <i class="icon ion-android-textsms"></i> <span>123</span>
-              </button>
+              <div ng-click="comments()"><i class="icon ion-android-textsms"></i> <span>123</span></div>
             </div>
           </div>
         </div>
@@ -133,31 +117,23 @@
         <div class="padding-vertical">
           <div ng-click="mediaPage()">
             <img src="../img/img1.png" alt="" class="full-image"/>
-            <h4 class="text-center">Article Title</h4>
+            <h4 class="text-center color_88">Article Title</h4>
 
             <p class="text-center">Article description</p>
           </div>
 
-          <div class="row color_aa">
+          <div class="row color_aa four_icons">
             <div class="col-20 col-offset-10">
-              <button class="button button-small button-clear thumbsup_icon">
-                <i class="icon ion-thumbsup"></i> <span>123</span>
-              </button>
+              <div ng-click=""><i class="icon ion-thumbsup"></i> <span>123</span></div>
             </div>
             <div class="col-20">
-              <button class="button button-small button-clear">
-                <i class="icon ion-android-share-alt"></i> <span>123</span>
-              </button>
+              <div ng-click=""><i class="icon ion-android-share-alt"></i> <span>123</span></div>
             </div>
             <div class="col-20">
-              <button class="button button-small button-clear heart_icon">
-                <i class="icon ion-ios-heart"></i> <span>123</span>
-              </button>
+              <div ng-click=""><i class="icon ion-ios-heart"></i> <span>123</span></div>
             </div>
             <div class="col-20">
-              <button class="button button-small button-clear" ng-click="noComments()">
-                <i class="icon ion-android-textsms"></i> <span>0</span>
-              </button>
+              <div ng-click="noComments()"><i class="icon ion-android-textsms"></i> <span>0</span></div>
             </div>
           </div>
         </div>
@@ -177,29 +153,21 @@
 
             <p class="text-center">1/1/2015 &nbsp; 12:12</p>
 
-            <p class="text-center">Article description</p>
+            <h4 class="text-center color_88">Article Title</h4>
           </div>
 
-          <div class="row color_aa">
+          <div class="row color_aa four_icons">
             <div class="col-20 col-offset-10">
-              <button class="button button-small button-clear thumbsup_icon">
-                <i class="icon ion-thumbsup"></i> <span>123</span>
-              </button>
+              <div ng-click=""><i class="icon ion-thumbsup"></i> <span>123</span></div>
             </div>
             <div class="col-20">
-              <button class="button button-small button-clear">
-                <i class="icon ion-android-share-alt"></i> <span>123</span>
-              </button>
+              <div ng-click=""><i class="icon ion-android-share-alt"></i> <span>123</span></div>
             </div>
             <div class="col-20">
-              <button class="button button-small button-clear heart_icon">
-                <i class="icon ion-ios-heart"></i> <span>123</span>
-              </button>
+              <div ng-click=""><i class="icon ion-ios-heart"></i> <span>123</span></div>
             </div>
             <div class="col-20">
-              <button class="button button-small button-clear" ng-click="comments()">
-                <i class="icon ion-android-textsms"></i> <span>123</span>
-              </button>
+              <div ng-click="comments()"><i class="icon ion-android-textsms"></i> <span>123</span></div>
             </div>
           </div>
         </div>
@@ -210,29 +178,21 @@
 
             <p class="text-center">1/1/2015 &nbsp; 12:12</p>
 
-            <p class="text-center">Article description</p>
+            <h4 class="text-center color_88">Article Title</h4>
           </div>
 
-          <div class="row color_aa">
+          <div class="row color_aa four_icons">
             <div class="col-20 col-offset-10">
-              <button class="button button-small button-clear thumbsup_icon">
-                <i class="icon ion-thumbsup"></i> <span>123</span>
-              </button>
+              <div ng-click=""><i class="icon ion-thumbsup"></i> <span>123</span></div>
             </div>
             <div class="col-20">
-              <button class="button button-small button-clear">
-                <i class="icon ion-android-share-alt"></i> <span>123</span>
-              </button>
+              <div ng-click=""><i class="icon ion-android-share-alt"></i> <span>123</span></div>
             </div>
             <div class="col-20">
-              <button class="button button-small button-clear heart_icon">
-                <i class="icon ion-ios-heart"></i> <span>123</span>
-              </button>
+              <div ng-click=""><i class="icon ion-ios-heart"></i> <span>123</span></div>
             </div>
             <div class="col-20">
-              <button class="button button-small button-clear" ng-click="noComments()">
-                <i class="icon ion-android-textsms"></i> <span>0</span>
-              </button>
+              <div ng-click="noComments()"><i class="icon ion-android-textsms"></i> <span>0</span></div>
             </div>
           </div>
         </div>
@@ -243,29 +203,21 @@
 
             <p class="text-center">1/1/2015 &nbsp; 12:12</p>
 
-            <p class="text-center">Article description</p>
+            <h4 class="text-center color_88">Article Title</h4>
           </div>
 
-          <div class="row color_aa">
+          <div class="row color_aa four_icons">
             <div class="col-20 col-offset-10">
-              <button class="button button-small button-clear thumbsup_icon">
-                <i class="icon ion-thumbsup"></i> <span>123</span>
-              </button>
+              <div ng-click=""><i class="icon ion-thumbsup"></i> <span>123</span></div>
             </div>
             <div class="col-20">
-              <button class="button button-small button-clear">
-                <i class="icon ion-android-share-alt"></i> <span>123</span>
-              </button>
+              <div ng-click=""><i class="icon ion-android-share-alt"></i> <span>123</span></div>
             </div>
             <div class="col-20">
-              <button class="button button-small button-clear heart_icon">
-                <i class="icon ion-ios-heart"></i> <span>123</span>
-              </button>
+              <div ng-click=""><i class="icon ion-ios-heart"></i> <span>123</span></div>
             </div>
             <div class="col-20">
-              <button class="button button-small button-clear" ng-click="comments()">
-                <i class="icon ion-android-textsms"></i> <span>123</span>
-              </button>
+              <div ng-click="comments()"><i class="icon ion-android-textsms"></i> <span>123</span></div>
             </div>
           </div>
         </div>
@@ -276,29 +228,21 @@
 
             <p class="text-center">1/1/2015 &nbsp; 12:12</p>
 
-            <p class="text-center">Article description</p>
+            <h4 class="text-center color_88">Article Title</h4>
           </div>
 
-          <div class="row color_aa">
+          <div class="row color_aa four_icons">
             <div class="col-20 col-offset-10">
-              <button class="button button-small button-clear thumbsup_icon">
-                <i class="icon ion-thumbsup"></i> <span>123</span>
-              </button>
+              <div ng-click=""><i class="icon ion-thumbsup"></i> <span>123</span></div>
             </div>
             <div class="col-20">
-              <button class="button button-small button-clear">
-                <i class="icon ion-android-share-alt"></i> <span>123</span>
-              </button>
+              <div ng-click=""><i class="icon ion-android-share-alt"></i> <span>123</span></div>
             </div>
             <div class="col-20">
-              <button class="button button-small button-clear heart_icon">
-                <i class="icon ion-ios-heart"></i> <span>123</span>
-              </button>
+              <div ng-click=""><i class="icon ion-ios-heart"></i> <span>123</span></div>
             </div>
             <div class="col-20">
-              <button class="button button-small button-clear" ng-click="noComments()">
-                <i class="icon ion-android-textsms"></i> <span>0</span>
-              </button>
+              <div ng-click="noComments()"><i class="icon ion-android-textsms"></i> <span>0</span></div>
             </div>
           </div>
         </div>
