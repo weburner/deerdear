@@ -42,7 +42,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         url: "/media-list",
         views: {
           'menuContent': {
-            templateUrl: "templates/media-list-tab.html",
+            templateUrl: "templates/media-list.html",
             //controller: 'AppCtrl'
           }
         }
