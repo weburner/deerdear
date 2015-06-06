@@ -1,15 +1,31 @@
-<ion-view view-title="Media List">
+<ion-view view-title="">
 
-  <div class="bar bar-subheader" style="border-bottom: 1px solid #aaa; padding-bottom: 0px;height: 48px;">
-    <div class="row text-center no_padding">
-      <div class="col-33 padding-vertical" ng-class="{'border_bottom':(mediaListTab == 1)}" ng-click="showTab(1)">Media</div>
-      <div class="col-34 padding-vertical" ng-class="{'border_bottom':(mediaListTab == 2)}" ng-click="showTab(2)">Style</div>
-      <div class="col-33  padding-vertical" ng-class="{'border_bottom':(mediaListTab == 3)}" ng-click="showTab(3)">About</div>
+  <ion-nav-bar class="bar-light media_list_header">
+    <ion-nav-buttons side="left">
+      <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+    </ion-nav-buttons>
+    <ion-nav-title>
+      <img src="../img/logo.png" alt="Logo" class="padding" style="width: 65px; height: 80px;"/>
+    </ion-nav-title>
+    <ion-nav-buttons side="right" class="text-center"></ion-nav-buttons>
+  </ion-nav-bar>
+
+  <div class="tabs-striped tabs-top tabs-background-light tabs-color-light">
+    <div class="tabs media_list_tabs" style="margin-top: 40px;">
+      <div class="tab-item" ng-class="{'active':(mediaListTab == 1)}" ng-click="showTab(1)">
+        Media
+      </div>
+      <div class="tab-item" ng-class="{'active':(mediaListTab == 2)}" ng-click="showTab(2)">
+        Style
+      </div>
+      <div class="tab-item" ng-class="{'active':(mediaListTab == 3)}" ng-click="showTab(3)">
+        About
+      </div>
     </div>
   </div>
 
-  <ion-content class="media_list_page">
-    <div style="margin-top: 50px">
+  <ion-content class="media_list_page" style="margin-top: 90px">
+    <div>
       <div ng-show="mediaListTab==1">
         <div>
           <h4 class="text-center padding-vertical">Welcome to deerdear</h4>
@@ -314,21 +330,25 @@
 
           <div class="padding-vertical">
             <img src="../img/about_img1.png" alt="" class="full-image"/>
+
             <div class="text-center padding-horizontal">This is a sample description</div>
           </div>
 
           <div class="padding-vertical text-center">
             <img src="../img/about_img2.png" alt="" class="width_80p"/>
+
             <div class="text-center padding-horizontal">This is a sample description</div>
           </div>
 
           <div class="padding-vertical">
             <img src="../img/about_img3.png" alt="" class="full-image"/>
+
             <div class="text-center padding-horizontal">This is a sample description</div>
           </div>
 
           <div class="padding-vertical text-center">
             <img src="../img/about_img4.png" alt="" class="width_80p"/>
+
             <div class="text-center padding-horizontal">This is a sample description</div>
           </div>
 
@@ -351,21 +371,25 @@
 
         <div class="padding-vertical">
           <img src="../img/about_img1.png" alt="" class="full-image"/>
+
           <div class="text-center padding-horizontal">This is a sample description</div>
         </div>
 
         <div class="padding-vertical text-center">
           <img src="../img/about_img2.png" alt="" class="width_80p"/>
+
           <div class="text-center padding-horizontal">This is a sample description</div>
         </div>
 
         <div class="padding-vertical">
           <img src="../img/about_img3.png" alt="" class="full-image"/>
+
           <div class="text-center padding-horizontal">This is a sample description</div>
         </div>
 
         <div class="padding-vertical text-center">
           <img src="../img/about_img4.png" alt="" class="width_80p"/>
+
           <div class="text-center padding-horizontal">This is a sample description</div>
         </div>
 

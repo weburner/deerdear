@@ -1,5 +1,20 @@
 /* Empty. Add your own CSS if you like */
 
+
+/*Over riding CSS START*/
+
+.media_list_header .bar {
+  height: 80px;
+}
+.media_list_tabs .tab-item {
+  color: #000000 !important;
+}
+.media_list_header .bar .title {
+  height: 80px;
+}
+
+/*Over riding CSS END*/
+
 .margin_vertical {
   margin: 10px 0;
 }
@@ -100,7 +115,7 @@
   font-size: 12px !important;
 }
 
-.border_bottom {
+.active_tab_border_bottom {
   border-bottom: 2px solid #aaa;
 }
 
