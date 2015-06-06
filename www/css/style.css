@@ -303,6 +303,11 @@
   color: black;
 }
 
+.close_icon {
+  font-size: 30px;
+  padding-right: 10px;
+}
+
 @font-face {
   font-family: 'HelveticaNeue-Thin';
   font-style: normal;
