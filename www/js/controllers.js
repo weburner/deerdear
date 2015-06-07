@@ -40,14 +40,15 @@ angular.module('starter.controllers', [])
       $scope.closeLogin();
       $scope.closeShareModal();
       $scope.closeCommentModal();
+      $scope.closeMyFavor();
     });
 
     $scope.openRegisterSlide = function(){
-      $scope.selectModalSlider.slide(1);
+      $scope.selectModalSlider.slide(2);
     };
 
     $scope.openForgotPasswordSlide = function(){
-      $scope.selectModalSlider.slide(2);
+      $scope.selectModalSlider.slide(1);
     };
 
     $scope.openLoginSlide = function(){

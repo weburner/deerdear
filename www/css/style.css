@@ -72,13 +72,32 @@
   margin: 0 10px;
 }
 
+.hr_line_ff_95p {
+  display: block !important;
+  border-top: 1px solid #AAAAAA;
+  width: 95%;
+  margin: auto;
+}
+
 .hr_line_ff {
   display: block !important;
   border-top: 1px solid #AAAAAA;
+  width: 100%;
+  margin: auto;
 }
 
 .login_modal, .my_favour_modal {
   background-color: rgba(63, 63, 63, 0.95);
+}
+
+.forgot_password_back_icon, .signup_back_icon {
+  font-size: 35px;
+  padding-left: 10px;
+  color: #fff;
+}
+.login_modal input {
+  font-family: 'HelveticaNeue-Thin';
+  font-size: 16px;
 }
 
 .register_modal, .forgot_password_modal {
@@ -241,6 +260,7 @@
   width: 80px;
   height: 80px;
 }
+
 .share_modal_clickable_content {
   position: fixed;
   z-index: 1005;
@@ -382,6 +402,16 @@
 .four_icons_count {
   position: absolute;
   padding-left: 5px;
+}
+
+.my_favour_modal .favor_item {
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  width: 95%;
+  margin: auto;
+  padding: 10px 0;
+  border-color: #aaa;
 }
 
 @font-face {
