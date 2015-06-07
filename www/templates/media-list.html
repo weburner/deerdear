@@ -2,16 +2,18 @@
 
   <ion-nav-bar class="bar-light media_list_header">
     <ion-nav-buttons side="left">
-      <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
+      <button class="button button-icon button-clear" menu-toggle="left">
+        <img src="../css/icons/side-menu.svg" alt="" class="menu_icon"/>
+      </button>
     </ion-nav-buttons>
     <ion-nav-title>
-      <img src="../img/logo.png" alt="Logo" class="padding" style="width: 65px; height: 80px;"/>
+      <img src="../css/icons/logo-deer.svg" alt="Logo" class="padding" style="width: 65px; height: 80px;"/>
     </ion-nav-title>
     <ion-nav-buttons side="right" class="text-center"></ion-nav-buttons>
   </ion-nav-bar>
 
   <div class="tabs-striped tabs-top tabs-background-light tabs-color-light">
-    <div class="tabs media_list_tabs" style="margin-top: 40px;">
+    <div class="tabs media_list_tabs" style="margin-top: 30px;">
       <div style="position: relative; padding: 0 15px;">
         <div class="tab-item" ng-class="{'active_tab':(mediaListTab == 1)}" ng-click="showTab(1)">
           Media
@@ -36,13 +38,15 @@
         <div>
           <h4 class="text-center padding-vertical helvetica_neue_ultra_light font_28px">Welcome to deerdear</h4>
 
-          <div class="text-center"><img src="../img/boxes.png" alt=""/></div>
+          <div class="text-center">
+            <img src="css/icons/divider.svg" alt=""/>
+          </div>
           <p class="text-center font_20px padding-vertical color_55">This is some description</p>
         </div>
 
         <div class="padding-vertical">
           <div ng-click="mediaPage()">
-            <img src="../img/img1.png" alt="" class="full-image"/>
+            <img src="img/img1.png" alt="" class="full-image"/>
             <h4 class="text-center color_88">Article Title</h4>
 
             <p class="text-center">Article description</p>
@@ -50,23 +54,36 @@
 
           <div class="row color_aa four_icons">
             <div class="col-20 col-offset-10">
-              <div ng-click=""><i class="icon ion-thumbsup"></i> <span>123</span></div>
+              <div ng-click="">
+                <span><img src="css/icons/4buttons-gey/like-grey.svg" alt="" class="four_icons_dimensions"/></span>
+                <span class="four_icons_count">123</span>
+              </div>
             </div>
             <div class="col-20">
-              <div ng-click=""><i class="icon ion-android-share-alt"></i> <span>123</span></div>
+              <div ng-click="">
+                <span><img src="css/icons/4buttons-gey/share-grey.svg" alt="" class="four_icons_dimensions"/></span>
+                <span class="four_icons_count">123</span>
+              </div>
             </div>
             <div class="col-20">
-              <div ng-click=""><i class="icon ion-ios-heart"></i> <span>123</span></div>
+              <div ng-click="">
+                <span><img src="css/icons/4buttons-gey/favor-grey.svg" alt="" class="four_icons_dimensions"/></span>
+                <span class="four_icons_count">123</span>
+              </div>
             </div>
             <div class="col-20">
-              <div ng-click="comments()"><i class="icon ion-android-textsms"></i> <span>123</span></div>
+              <div ng-click="comments()">
+                <span><img src="css/icons/4buttons-gey/comment-grey.svg" alt="" class="four_icons_dimensions"/></span>
+                <span class="four_icons_count">123</span>
+              </div>
             </div>
           </div>
+
         </div>
 
         <div class="padding-vertical">
           <div ng-click="mediaPage()">
-            <img src="../img/img4.png" alt="" class="full-image"/>
+            <img src="img/img4.png" alt="" class="full-image"/>
             <h4 class="text-center color_88">Article Title</h4>
 
             <p class="text-center">Article description</p>
@@ -74,23 +91,36 @@
 
           <div class="row color_aa four_icons">
             <div class="col-20 col-offset-10">
-              <div ng-click=""><i class="icon ion-thumbsup"></i> <span>123</span></div>
+              <div ng-click="">
+                <span><img src="css/icons/4buttons-gey/like-grey.svg" alt="" class="four_icons_dimensions"/></span>
+                <span class="four_icons_count">123</span>
+              </div>
             </div>
             <div class="col-20">
-              <div ng-click=""><i class="icon ion-android-share-alt"></i> <span>123</span></div>
+              <div ng-click="">
+                <span><img src="css/icons/4buttons-gey/share-grey.svg" alt="" class="four_icons_dimensions"/></span>
+                <span class="four_icons_count">123</span>
+              </div>
             </div>
             <div class="col-20">
-              <div ng-click=""><i class="icon ion-ios-heart"></i> <span>123</span></div>
+              <div ng-click="">
+                <span><img src="css/icons/4buttons-gey/favor-grey.svg" alt="" class="four_icons_dimensions"/></span>
+                <span class="four_icons_count">123</span>
+              </div>
             </div>
             <div class="col-20">
-              <div ng-click="noComments()"><i class="icon ion-android-textsms"></i> <span>0</span></div>
+              <div ng-click="noComments()">
+                <span><img src="css/icons/4buttons-gey/comment-grey.svg" alt="" class="four_icons_dimensions"/></span>
+                <span class="four_icons_count">0</span>
+              </div>
             </div>
           </div>
+
         </div>
 
         <div class="padding-vertical">
           <div ng-click="mediaPage()">
-            <img src="../img/img3.png" alt="" class="full-image"/>
+            <img src="img/img3.png" alt="" class="full-image"/>
             <h4 class="text-center color_88">Article Title</h4>
 
             <p class="text-center">Article description</p>
@@ -98,23 +128,36 @@
 
           <div class="row color_aa four_icons">
             <div class="col-20 col-offset-10">
-              <div ng-click=""><i class="icon ion-thumbsup"></i> <span>123</span></div>
+              <div ng-click="">
+                <span><img src="css/icons/4buttons-gey/like-grey.svg" alt="" class="four_icons_dimensions"/></span>
+                <span class="four_icons_count">123</span>
+              </div>
             </div>
             <div class="col-20">
-              <div ng-click=""><i class="icon ion-android-share-alt"></i> <span>123</span></div>
+              <div ng-click="">
+                <span><img src="css/icons/4buttons-gey/share-grey.svg" alt="" class="four_icons_dimensions"/></span>
+                <span class="four_icons_count">123</span>
+              </div>
             </div>
             <div class="col-20">
-              <div ng-click=""><i class="icon ion-ios-heart"></i> <span>123</span></div>
+              <div ng-click="">
+                <span><img src="css/icons/4buttons-gey/favor-grey.svg" alt="" class="four_icons_dimensions"/></span>
+                <span class="four_icons_count">123</span>
+              </div>
             </div>
             <div class="col-20">
-              <div ng-click="comments()"><i class="icon ion-android-textsms"></i> <span>123</span></div>
+              <div ng-click="comments()">
+                <span><img src="css/icons/4buttons-gey/comment-grey.svg" alt="" class="four_icons_dimensions"/></span>
+                <span class="four_icons_count">123</span>
+              </div>
             </div>
           </div>
+
         </div>
 
         <div class="padding-vertical">
           <div ng-click="mediaPage()">
-            <img src="../img/img1.png" alt="" class="full-image"/>
+            <img src="img/img1.png" alt="" class="full-image"/>
             <h4 class="text-center color_88">Article Title</h4>
 
             <p class="text-center">Article description</p>
@@ -122,18 +165,31 @@
 
           <div class="row color_aa four_icons">
             <div class="col-20 col-offset-10">
-              <div ng-click=""><i class="icon ion-thumbsup"></i> <span>123</span></div>
+              <div ng-click="">
+                <span><img src="css/icons/4buttons-gey/like-grey.svg" alt="" class="four_icons_dimensions"/></span>
+                <span class="four_icons_count">123</span>
+              </div>
             </div>
             <div class="col-20">
-              <div ng-click=""><i class="icon ion-android-share-alt"></i> <span>123</span></div>
+              <div ng-click="">
+                <span><img src="css/icons/4buttons-gey/share-grey.svg" alt="" class="four_icons_dimensions"/></span>
+                <span class="four_icons_count">123</span>
+              </div>
             </div>
             <div class="col-20">
-              <div ng-click=""><i class="icon ion-ios-heart"></i> <span>123</span></div>
+              <div ng-click="">
+                <span><img src="css/icons/4buttons-gey/favor-grey.svg" alt="" class="four_icons_dimensions"/></span>
+                <span class="four_icons_count">123</span>
+              </div>
             </div>
             <div class="col-20">
-              <div ng-click="noComments()"><i class="icon ion-android-textsms"></i> <span>0</span></div>
+              <div ng-click="noComments()">
+                <span><img src="css/icons/4buttons-gey/comment-grey.svg" alt="" class="four_icons_dimensions"/></span>
+                <span class="four_icons_count">0</span>
+              </div>
             </div>
           </div>
+
         </div>
       </div>
 
@@ -141,13 +197,15 @@
         <div>
           <h4 class="text-center padding-vertical helvetica_neue_ultra_light font_28px">Welcome to deerdear</h4>
 
-          <div class="text-center"><img src="../img/boxes.png" alt=""/></div>
+          <div class="text-center">
+            <img src="css/icons/divider.svg" alt=""/>
+          </div>
           <p class="text-center">Description</p>
         </div>
 
         <div class="padding-vertical">
           <div ng-click="stylePage()">
-            <img src="../img/item6.png" alt="" class="full-image"/>
+            <img src="img/item6.png" alt="" class="full-image"/>
 
             <p class="text-center color_88">1/1/2015 &nbsp; 12:12</p>
 
@@ -156,23 +214,36 @@
 
           <div class="row color_aa four_icons">
             <div class="col-20 col-offset-10">
-              <div ng-click=""><i class="icon ion-thumbsup"></i> <span>123</span></div>
+              <div ng-click="">
+                <span><img src="css/icons/4buttons-gey/like-grey.svg" alt="" class="four_icons_dimensions"/></span>
+                <span class="four_icons_count">123</span>
+              </div>
             </div>
             <div class="col-20">
-              <div ng-click=""><i class="icon ion-android-share-alt"></i> <span>123</span></div>
+              <div ng-click="">
+                <span><img src="css/icons/4buttons-gey/share-grey.svg" alt="" class="four_icons_dimensions"/></span>
+                <span class="four_icons_count">123</span>
+              </div>
             </div>
             <div class="col-20">
-              <div ng-click=""><i class="icon ion-ios-heart"></i> <span>123</span></div>
+              <div ng-click="">
+                <span><img src="css/icons/4buttons-gey/favor-grey.svg" alt="" class="four_icons_dimensions"/></span>
+                <span class="four_icons_count">123</span>
+              </div>
             </div>
             <div class="col-20">
-              <div ng-click="noComments()"><i class="icon ion-android-textsms"></i> <span>0</span></div>
+              <div ng-click="comments()">
+                <span><img src="css/icons/4buttons-gey/comment-grey.svg" alt="" class="four_icons_dimensions"/></span>
+                <span class="four_icons_count">123</span>
+              </div>
             </div>
           </div>
+
         </div>
 
         <div class="padding-vertical">
           <div>
-            <img src="../img/img2.png" alt="" class="full-image"/>
+            <img src="img/img2.png" alt="" class="full-image"/>
 
             <p class="text-center color_88">1/1/2015 &nbsp; 12:12</p>
 
@@ -181,23 +252,36 @@
 
           <div class="row color_aa four_icons">
             <div class="col-20 col-offset-10">
-              <div ng-click=""><i class="icon ion-thumbsup"></i> <span>123</span></div>
+              <div ng-click="">
+                <span><img src="css/icons/4buttons-gey/like-grey.svg" alt="" class="four_icons_dimensions"/></span>
+                <span class="four_icons_count">123</span>
+              </div>
             </div>
             <div class="col-20">
-              <div ng-click=""><i class="icon ion-android-share-alt"></i> <span>123</span></div>
+              <div ng-click="">
+                <span><img src="css/icons/4buttons-gey/share-grey.svg" alt="" class="four_icons_dimensions"/></span>
+                <span class="four_icons_count">123</span>
+              </div>
             </div>
             <div class="col-20">
-              <div ng-click=""><i class="icon ion-ios-heart"></i> <span>123</span></div>
+              <div ng-click="">
+                <span><img src="css/icons/4buttons-gey/favor-grey.svg" alt="" class="four_icons_dimensions"/></span>
+                <span class="four_icons_count">123</span>
+              </div>
             </div>
             <div class="col-20">
-              <div ng-click="noComments()"><i class="icon ion-android-textsms"></i> <span>0</span></div>
+              <div ng-click="noComments()">
+                <span><img src="css/icons/4buttons-gey/comment-grey.svg" alt="" class="four_icons_dimensions"/></span>
+                <span class="four_icons_count">0</span>
+              </div>
             </div>
           </div>
+
         </div>
 
         <div class="padding-vertical">
           <div>
-            <img src="../img/item7.png" alt="" class="full-image"/>
+            <img src="img/item7.png" alt="" class="full-image"/>
 
             <p class="text-center color_88">1/1/2015 &nbsp; 12:12</p>
 
@@ -206,23 +290,36 @@
 
           <div class="row color_aa four_icons">
             <div class="col-20 col-offset-10">
-              <div ng-click=""><i class="icon ion-thumbsup"></i> <span>123</span></div>
+              <div ng-click="">
+                <span><img src="css/icons/4buttons-gey/like-grey.svg" alt="" class="four_icons_dimensions"/></span>
+                <span class="four_icons_count">123</span>
+              </div>
             </div>
             <div class="col-20">
-              <div ng-click=""><i class="icon ion-android-share-alt"></i> <span>123</span></div>
+              <div ng-click="">
+                <span><img src="css/icons/4buttons-gey/share-grey.svg" alt="" class="four_icons_dimensions"/></span>
+                <span class="four_icons_count">123</span>
+              </div>
             </div>
             <div class="col-20">
-              <div ng-click=""><i class="icon ion-ios-heart"></i> <span>123</span></div>
+              <div ng-click="">
+                <span><img src="css/icons/4buttons-gey/favor-grey.svg" alt="" class="four_icons_dimensions"/></span>
+                <span class="four_icons_count">123</span>
+              </div>
             </div>
             <div class="col-20">
-              <div ng-click="comments()"><i class="icon ion-android-textsms"></i> <span>123</span></div>
+              <div ng-click="comments()">
+                <span><img src="css/icons/4buttons-gey/comment-grey.svg" alt="" class="four_icons_dimensions"/></span>
+                <span class="four_icons_count">123</span>
+              </div>
             </div>
           </div>
+
         </div>
 
         <div class="padding-vertical">
           <div>
-            <img src="../img/item6.png" alt="" class="full-image"/>
+            <img src="img/item6.png" alt="" class="full-image"/>
 
             <p class="text-center color_88">1/1/2015 &nbsp; 12:12</p>
 
@@ -231,18 +328,31 @@
 
           <div class="row color_aa four_icons">
             <div class="col-20 col-offset-10">
-              <div ng-click=""><i class="icon ion-thumbsup"></i> <span>123</span></div>
+              <div ng-click="">
+                <span><img src="css/icons/4buttons-gey/like-grey.svg" alt="" class="four_icons_dimensions"/></span>
+                <span class="four_icons_count">123</span>
+              </div>
             </div>
             <div class="col-20">
-              <div ng-click=""><i class="icon ion-android-share-alt"></i> <span>123</span></div>
+              <div ng-click="">
+                <span><img src="css/icons/4buttons-gey/share-grey.svg" alt="" class="four_icons_dimensions"/></span>
+                <span class="four_icons_count">123</span>
+              </div>
             </div>
             <div class="col-20">
-              <div ng-click=""><i class="icon ion-ios-heart"></i> <span>123</span></div>
+              <div ng-click="">
+                <span><img src="css/icons/4buttons-gey/favor-grey.svg" alt="" class="four_icons_dimensions"/></span>
+                <span class="four_icons_count">123</span>
+              </div>
             </div>
             <div class="col-20">
-              <div ng-click="noComments()"><i class="icon ion-android-textsms"></i> <span>0</span></div>
+              <div ng-click="noComments()">
+                <span><img src="css/icons/4buttons-gey/comment-grey.svg" alt="" class="four_icons_dimensions"/></span>
+                <span class="four_icons_count">0</span>
+              </div>
             </div>
           </div>
+
         </div>
       </div>
 
@@ -257,12 +367,12 @@
               odio sit.</p>
 
             <div class="text-center">
-              <img src="../img/boxes.png" alt=""/>
+              <img src="css/icons/divider.svg" alt=""/>
             </div>
 
-            <h4 class="text-center helvetica_neue_ultra_light font_24px">FASHION ON deerdear</h4>
+            <h5 class="text-center helvetica_neue_ultra_light font_20px">FASHION ON deerdear</h5>
 
-            <p class="text-center font_bold">Description</p>
+            <h4 class="text-center font_bold helvetica_neue_ultra_light font_24px letter_space_2px">MAIN TITLE</h4>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi beatae est et eum exercitationem
               facilis
@@ -271,25 +381,25 @@
           </div>
 
           <div class="padding-vertical">
-            <img src="../img/about_img1.png" alt="" class="full-image"/>
+            <img src="img/about_img1.png" alt="" class="full-image"/>
 
             <div class="text-center padding-horizontal">This is a sample description</div>
           </div>
 
           <div class="padding-vertical text-center">
-            <img src="../img/about_img2.png" alt="" class="width_80p"/>
+            <img src="img/about_img2.png" alt="" class="width_80p"/>
 
             <div class="text-center padding-horizontal">This is a sample description</div>
           </div>
 
           <div class="padding-vertical">
-            <img src="../img/about_img3.png" alt="" class="full-image"/>
+            <img src="img/about_img3.png" alt="" class="full-image"/>
 
             <div class="text-center padding-horizontal">This is a sample description</div>
           </div>
 
           <div class="padding-vertical text-center">
-            <img src="../img/about_img4.png" alt="" class="width_80p"/>
+            <img src="img/about_img4.png" alt="" class="width_80p"/>
 
             <div class="text-center padding-horizontal">This is a sample description</div>
           </div>
@@ -298,12 +408,12 @@
 
         <div class="padding-horizontal">
           <div class="text-center">
-            <img src="../img/boxes.png" alt=""/>
+            <img src="css/icons/divider.svg" alt=""/>
           </div>
 
-          <h4 class="text-center helvetica_neue_ultra_light font_24px">FASHION ON deerdear</h4>
+          <h5 class="text-center helvetica_neue_ultra_light font_20px">FASHION ON deerdear</h5>
 
-          <p class="text-center font_bold">Description</p>
+          <h4 class="text-center font_bold helvetica_neue_ultra_light font_24px letter_space_2px">MAIN TITLE</h4>
 
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi beatae est et eum exercitationem
             facilis
@@ -312,29 +422,28 @@
         </div>
 
         <div class="padding-vertical">
-          <img src="../img/about_img1.png" alt="" class="full-image"/>
+          <img src="img/about_img1.png" alt="" class="full-image"/>
 
           <div class="text-center padding-horizontal">This is a sample description</div>
         </div>
 
         <div class="padding-vertical text-center">
-          <img src="../img/about_img2.png" alt="" class="width_80p"/>
+          <img src="img/about_img2.png" alt="" class="width_80p"/>
 
           <div class="text-center padding-horizontal">This is a sample description</div>
         </div>
 
         <div class="padding-vertical">
-          <img src="../img/about_img3.png" alt="" class="full-image"/>
+          <img src="img/about_img3.png" alt="" class="full-image"/>
 
           <div class="text-center padding-horizontal">This is a sample description</div>
         </div>
 
         <div class="padding-vertical text-center">
-          <img src="../img/about_img4.png" alt="" class="width_80p"/>
+          <img src="img/about_img4.png" alt="" class="width_80p"/>
 
           <div class="text-center padding-horizontal">This is a sample description</div>
         </div>
-
 
       </div>
 

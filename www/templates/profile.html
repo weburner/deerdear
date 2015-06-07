@@ -3,23 +3,18 @@
 
   </ion-header-bar>-->
 
-  <ion-content>
+  <ion-content class="profile_page">
 
 
     <div class="padding-horizontal color_ff">
 
-      <div class="row" style="padding-top: 15px;">
-        <div class="col-90">
-          <h4 class="title text-center color_ff font_bold" style="padding-left: 14%">Profile</h4>
-        </div>
-        <div class="col-10">
-          <div class="buttons">
-            <button class="button button-clear" ng-click="closeProfile()">
-              <i class="ion-android-close close_icon"></i>
-            </button>
-          </div>
-        </div>
+      <div class="padding-top" style="text-align: right;">
+        <button class="button button-clear" ng-click="closeProfile()">
+          <img src="../css/icons/close.svg" alt="" width="25px;"/>
+        </button>
       </div>
+
+      <h4 class="title text-center color_ff font_bold" style="margin-top: 5px;">Profile</h4>
 
       <p class="hr_line_ff"></p>
 
@@ -30,48 +25,54 @@
           </div>
         </div>
         <div class="text-center"><h4 class="color_ff helvetica_neue_thin font_bold font_20px">Felix He</h4></div>
-        <div class="text-center"><p class="helvetica_neue_thin font_bold font_14px" style="margin-bottom: 25px;">Member
+        <div class="text-center"><p class="helvetica_neue_thin font_bold font_14px color_dd" style="margin-bottom: 25px;">Member
           since 2012</p></div>
       </div>
     </div>
 
-    <div>
-      <div>
-        <ul class="list profile_list helvetica_neue_thin">
-          <li class="item">
-            <div class="row">
-              <div class="col-20"><i class="icon ion-ios-person-outline"></i></div>
-              <div class="col-80">Felix He</i></div>
+    <div class="padding-horizontal">
+      <ul class="list profile_list helvetica_neue_thin">
+        <li class="item no_border_lr">
+          <div class="row">
+            <div class="col-20">
+              <img src="../css/icons/profile-icons/pro-user.svg" alt="" class="profile_icons"/>
             </div>
-          </li>
-          <li class="item">
-            <div class="row">
-              <div class="col-20"><i class="icon ion-ios-calendar-outline"></i></div>
-              <div class="col-80">August 16, 1979</i></div>
+            <div class="col-80">Felix He</i></div>
+          </div>
+        </li>
+        <li class="item no_border_lr">
+          <div class="row">
+            <div class="col-20">
+              <img src="../css/icons/profile-icons/pro-calender.svg" alt="" class="profile_icons"/>
             </div>
-          </li>
-          <li class="item">
-            <div class="row">
-              <div class="col-20"><i class="icon ion-happy-outline"></i></div>
-              <div class="col-80">Male</i></div>
+            <div class="col-80">August 16, 1979</i></div>
+          </div>
+        </li>
+        <li class="item no_border_lr">
+          <div class="row">
+            <div class="col-20">
+              <img src="../css/icons/profile-icons/pro-smile.svg" alt="" class="profile_icons"/>
             </div>
-          </li>
-          <li class="item">
-            <div class="row">
-              <div class="col-20"><i class="icon ion-ios-telephone-outline"></i></div>
-              <div class="col-80">+86 1234567890</i></div>
+            <div class="col-80">Male</i></div>
+          </div>
+        </li>
+        <li class="item no_border_lr">
+          <div class="row">
+            <div class="col-20">
+              <img src="../css/icons/profile-icons/pro-phone.svg" alt="" class="profile_icons"/>
             </div>
-          </li>
-          <li class="item">
-            <div class="row">
-              <div class="col-20"><i class="icon ion-ios-locked-outline"></i></div>
-              <div class="col-80">Logout</i></div>
+            <div class="col-80">+86 1234567890</i></div>
+          </div>
+        </li>
+        <li class="item no_border_lr">
+          <div class="row">
+            <div class="col-20">
+              <img src="../css/icons/profile-icons/pro-lock.svg" alt="" class="profile_icons"/>
             </div>
-          </li>
-        </ul>
-      </div>
-
-
+            <div class="col-80">Logout</i></div>
+          </div>
+        </li>
+      </ul>
     </div>
 
   </ion-content>

@@ -6,12 +6,48 @@
   height: 55px;
 }
 
+.letter_space_1px {
+  letter-spacing: 1px;
+}
+
+.letter_space_2px {
+  letter-spacing: 2px;
+}
+
+.menu_items_border {
+  border-left: 1px solid #aaa;
+  padding-left: 12px;
+  margin-left: 5px;
+}
+
+.menu_icon {
+  width: 40px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.media_list_page .four_icons .col-20 {
+  padding-left: 3%;
+}
+
 .media_list_page .four_icons .icon {
   color: #AAAAAA;
 }
 
 .media_list_page .four_icons .activated .icon, .media_list_page .four_icons .activated {
   color: #444;
+}
+
+.fixed_icons .four_icons .col-20 {
+  padding-left: 5%;
+}
+
+.fixed_icons .four_icons {
+  color: #ffffff;
+}
+
+.fixed_icons .four_icons .four_icons_count {
+  color: #ffffff;
 }
 
 .media_list_tabs {
@@ -65,14 +101,36 @@
   color: #aaaaaa !important;
 }
 
+.color_dd {
+  color: #dddddd !important;
+}
+
 .font_bold {
   font-weight: bold;
+}
+
+.profile_icons {
+  width: 30px;
+  height: 30px;
+}
+
+.profile_list .item .row .col-20 {
+  text-align: center;
+}
+
+.profile_page .item {
+  border-color: #AAAAAA;
 }
 
 .profile_list .item {
   background-color: inherit;
   padding: 5px;
   color: #ffffff;
+}
+
+.no_border_lr {
+  border-left: 0;
+  border-right: 0;
 }
 
 .no_padding {
@@ -159,7 +217,7 @@
 .slider_description {
   position: absolute;
   bottom: 0px;
-  background-color: rgba(255, 255, 255, 0.51);
+  background-color: rgba(255, 255, 255, 0.75);
   width: 100%;
   height: auto;
 }
@@ -200,8 +258,8 @@
 .media_page .fixed_icons {
   position: fixed;
   z-index: 100;
-  padding-top: 19px;
-  right: 18px;
+  padding-top: 18px;
+  width: 100%;
 }
 
 .width_80p {
@@ -238,10 +296,9 @@
 
 .menu_content ion-item {
   background-color: rgb(65, 65, 65) !important;
-  color: #ffffff;
   border: none !important;
   padding: 5px 15px !important;
-  color: #AAAAAA;
+  color: #dddddd;
 }
 
 .back-text, span.default-title {
@@ -253,11 +310,20 @@
 }
 
 .media_page .back_btn {
-  position: fixed;
-  z-index: 100;
-  background-color: #222222;
+  background-color: #000;
   border-radius: 50%;
-  margin: 10px;
+  height: 50px;
+  width: 50px;
+  padding: 5% 0 0 25%;
+}
+
+.media_page .back_btn i {
+  font-size: 45px;
+}
+
+.media_page .back_btn button {
+  padding-top: 7px;
+  padding-right: 10px;
 }
 
 .width_100p {
@@ -306,6 +372,16 @@
 .close_icon {
   font-size: 30px;
   padding-right: 10px;
+}
+
+.four_icons_dimensions {
+  width: 20px;
+  height: 20px;
+}
+
+.four_icons_count {
+  position: absolute;
+  padding-left: 5px;
 }
 
 @font-face {
