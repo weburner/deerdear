@@ -52,7 +52,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         url: "/style",
         views: {
           'menuContent': {
-            templateUrl: "templates/style.html",
+            templateUrl: "templates/style-page.html",
             controller: 'AppCtrl'
           }
         }

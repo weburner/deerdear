@@ -125,6 +125,10 @@
   color: #dddddd !important;
 }
 
+.color_d94 {
+  color: #dd9944 !important;
+}
+
 .font_bold {
   font-weight: bold;
 }
@@ -199,11 +203,20 @@
 
 .style_page .card {
   margin: 10px 5px !important;
-  height: 250px;
+  height: 255px;
 }
 
-.height_65p {
-  height: 65%;
+.style_like {
+  position: absolute;
+  padding: 3px;
+}
+
+.height_180px {
+  height: 180px;
+}
+
+.padding_top_5px {
+  padding-top: 5px !important;
 }
 
 .pull_right {
@@ -212,6 +225,15 @@
 
 .pull_left {
   float: left;
+}
+
+.half_line {
+  border-bottom: 1px solid #aaa;
+  display: inline-block;
+  width: 32%;
+  margin: 0 1%;
+  position: relative;
+  top: -5px;
 }
 
 .comments_page .item {
@@ -242,17 +264,6 @@
   height: auto;
 }
 
-/*.share_slider {
-  position: fixed;
-  z-index: 1001;
-  top: 10%;
-  background-color: rgba(22, 22, 20, 0.98);
-}*/
-/*.slider_icons {
-  position: absolute;
-  top: 5px;
-  width: 100%;
-}*/
 .share_modal_view {
   background-color: rgba(0, 0, 0, 0.25);
 }
@@ -357,6 +368,7 @@
   z-index: 1003;
   top: 50vh;
 }
+
 .comment_box {
   padding: 5px;
   resize: none;
@@ -433,6 +445,24 @@
   position: fixed;
   display: inline;
   padding-top: 10px;
+}
+
+.back_btn_show {
+  position: fixed;
+  display: inline;
+  padding-top: 8px;
+  z-index: 100;
+  background-color: #000000;
+  margin: 10px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.back_btn_show i {
+  font-size: 35px;
+  padding: 0 0 0px 16px;
+  text-align: center;
 }
 
 @font-face {
