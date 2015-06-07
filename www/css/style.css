@@ -95,6 +95,7 @@
   padding-left: 10px;
   color: #fff;
 }
+
 .login_modal input {
   font-family: 'HelveticaNeue-Thin';
   font-size: 16px;
@@ -412,6 +413,22 @@
   margin: auto;
   padding: 10px 0;
   border-color: #aaa;
+}
+
+.comments_page .comment_item {
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  width: 95%;
+  margin: auto;
+  padding: 10px 0;
+  border-color: #aaa;
+}
+
+.menu_show {
+  position: fixed;
+  display: inline;
+  padding-top: 10px;
 }
 
 @font-face {
