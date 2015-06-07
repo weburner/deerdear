@@ -31,6 +31,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       })
       .state('app.media-page', {
         url: "/media-page",
+        cache: false,
         views: {
           'menuContent': {
             templateUrl: "templates/media-page.html",
@@ -65,7 +66,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
           }
         }
       })
-    .state('app.comments', {
+      .state('app.comments', {
         url: "/comments",
         views: {
           'menuContent': {

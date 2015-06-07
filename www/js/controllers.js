@@ -152,7 +152,7 @@ angular.module('starter.controllers', [])
     };
 
     $scope.mediaPage = function () {
-      $state.go('app.media-page');
+      $state.go('app.media-page',{},{reload : true});
     };
 
     $scope.comments = function () {
