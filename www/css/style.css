@@ -351,11 +351,15 @@
   width: 100% !important;
 }
 
-.comment_box {
-  padding-top: 90%;
+.comment_box_div {
+  position: fixed;
+  width: 100%;
+  z-index: 1003;
+  top: 50vh;
 }
-
-.active_tab {
+.comment_box {
+  padding: 5px;
+  resize: none;
 }
 
 .active_tab:before {
