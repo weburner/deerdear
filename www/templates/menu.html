@@ -5,19 +5,21 @@
       </ion-nav-back-button>
 
       <ion-nav-buttons side="left">
-        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
-        </button>
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
       </ion-nav-buttons>
     </ion-nav-bar>
     <ion-nav-view name="menuContent"></ion-nav-view>
   </ion-side-menu-content>
 
-  <ion-side-menu side="left">
+  <ion-side-menu side="left" class="side_menu">
     <ion-header-bar class="bar-stable menu_header">
-      <!--<h1 class="title">Left</h1>-->
       <div class="row">
-        <div class="col-offset-66 col-34">
-          <!--<img src="../img/logo_big.png" alt="Logo" width="50px" height="100px"/>-->
+        <div class="col-25" style="padding-top: 20px;padding-left: 20px;">
+          <div class="" menu-toggle="left">
+            <img src="../css/icons/back-arrow.svg" alt="" width="20px" height="30px"/>
+          </div>
+        </div>
+        <div class="col-offset-50 col-25">
           <img src="../css/icons/logo-white.svg" alt="" width="80px" height="100px"/>
         </div>
       </div>
