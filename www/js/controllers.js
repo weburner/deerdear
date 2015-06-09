@@ -1,6 +1,6 @@
 angular.module('starter.controllers', [])
 
-  .controller('AppCtrl', function ($scope, $ionicModal, $timeout, $state, $ionicSlideBoxDelegate, $ionicPlatform) {
+  .controller('AppCtrl', function ($scope, $ionicModal, $timeout, $state, $ionicSlideBoxDelegate, $ionicScrollDelegate) {
 
     // With the new view caching in Ionic, Controllers are only called
     // when they are recreated or on app start, instead of every page change.
@@ -35,7 +35,7 @@ angular.module('starter.controllers', [])
       $scope.login_modal.show();
     };
 
-    $scope.$on('$stateChangeStart', function(event, toState, toParams, fromState, fromParams){
+    $scope.$on('$stateChangeStart', function (event, toState, toParams, fromState, fromParams) {
       console.log('$stateChangeStart');
       $scope.closeLogin();
       $scope.closeShareModal();
@@ -43,15 +43,15 @@ angular.module('starter.controllers', [])
       $scope.closeMyFavor();
     });
 
-    $scope.openRegisterSlide = function(){
+    $scope.openRegisterSlide = function () {
       $scope.selectModalSlider.slide(2);
     };
 
-    $scope.openForgotPasswordSlide = function(){
+    $scope.openForgotPasswordSlide = function () {
       $scope.selectModalSlider.slide(1);
     };
 
-    $scope.openLoginSlide = function(){
+    $scope.openLoginSlide = function () {
       $scope.selectModalSlider.slide(0);
     };
 
@@ -125,7 +125,7 @@ angular.module('starter.controllers', [])
       $state.go('app.style');
     };
 
-    $scope.listUnderTag = function(){
+    $scope.listUnderTag = function () {
       $state.go('app.list-under-tag');
     };
 
@@ -142,18 +142,19 @@ angular.module('starter.controllers', [])
     $scope.mediaListTab = 1;
     $scope.listUnderTagTab = 1;
 
-    $scope.showTab = function(val){
+    $scope.showTab = function (val) {
       $state.go('app.media-list');
       $scope.mediaListTab = val;
+      $ionicScrollDelegate.scrollTop();
     };
 
-    $scope.showListUnderTag = function(val){
+    $scope.showListUnderTag = function (val) {
       $state.go('app.list-under-tag');
       $scope.listUnderTagTab = val;
     };
 
     $scope.mediaPage = function () {
-      $state.go('app.media-page',{},{reload : true});
+      $state.go('app.media-page', {}, {reload: true});
     };
 
     $scope.comments = function () {
@@ -164,11 +165,11 @@ angular.module('starter.controllers', [])
       $state.go('app.no-comment');
     };
 
-    $scope.goToOtherPage = function(){
+    $scope.goToOtherPage = function () {
       alert('This will go to other page');
     };
 
-    $scope.writeComment = function(){
+    $scope.writeComment = function () {
       $scope.openCommentModal();
     };
 
