@@ -342,7 +342,12 @@
   z-index: 1003;
   top: 90vh;
 }
-
+.comment_box{
+  width: 100%;
+  height: 44px !important;
+  border: 5px solid #ffffff !important;
+  background-color: #eeeeee;
+}
 .share_modal_main_content {
   position: fixed;
   z-index: 1003;
