@@ -94,7 +94,12 @@
 .margin_horizontal {
   margin: 0 10px;
 }
-
+.text_align_start {
+  text-align: start;
+}
+.border_none {
+  border: none !important;
+}
 .hr_line_ff_95p {
   display: block !important;
   border-top: 1px solid #AAAAAA;
@@ -227,7 +232,6 @@
 
 .style_page .card {
   margin: 10px 5px !important;
-  height: 255px;
   text-align: center;
 }
 
@@ -254,15 +258,6 @@
 
 .pull_left {
   float: left;
-}
-
-.half_line {
-  border-bottom: 1px solid #aaa;
-  display: inline-block;
-  width: 32%;
-  margin: 0 1%;
-  position: relative;
-  top: -5px;
 }
 
 .no_padding_lr {
@@ -524,10 +519,27 @@
 .cover_image {
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center;
   width: 90%;
   height: 180px;
 }
+
+.style_page_content fieldset.box-title {
+  border:none;
+  text-align: center;
+  border-top: 1px solid #AAAAAA;
+  width: 95%;
+  margin: auto
+}
+
+.style_page_content fieldset.box-title legend {
+  border:none;
+  padding: 0 10px;
+  display: block;
+  width: auto;
+  margin: 0;
+}
+
 
 
 
