@@ -73,8 +73,8 @@
 }
 
 .media_list_tabs {
-  height: 40px;
-  line-height: 40px;
+  height: 35px;
+  line-height: 35px;
 }
 
 .media_list_tabs .tab-item {
@@ -503,18 +503,18 @@
 .back_btn_show {
   position: fixed;
   display: inline;
-  padding-top: 8px;
+  padding-top: 5px;
   z-index: 100;
   background-color: #000000;
   margin: 10px;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
 }
 
 .back_btn_show i {
   font-size: 35px;
-  padding: 0 0 0px 16px;
+  padding: 0 0 0px 14px;
   text-align: center;
 }
 
