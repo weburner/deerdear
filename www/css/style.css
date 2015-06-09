@@ -521,6 +521,26 @@
 .padding_horizontal_20px {
   padding: 0 20px !important;
 }
+.cover_image {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 90%;
+  height: 180px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @font-face {
   font-family: 'HelveticaNeue-Thin';
