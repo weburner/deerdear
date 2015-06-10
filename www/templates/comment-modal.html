@@ -1,15 +1,26 @@
 <ion-modal-view class="share_modal_view">
-  <!--<ion-header-bar>
-    <h1 class="title">My Modal title</h1>
-  </ion-header-bar>-->
-  <ion-content>
-    <div class="share_modal_clickable_content" ng-click="closeCommentModal()"></div>
+
+  <ion-header-bar style="display: none;"></ion-header-bar>
+
+  <ion-content style="top:0px; height: 100%">
+    <!--<div class="share_modal_clickable_content" ng-click="closeCommentModal()"></div>
     <div class="comment_box_div">
       <div class="position_relative">
         <div class="position_absolute width_100p" style="top: 2vh;">
-          <input type="text" class="comment_box" placeholder="Enter Comment" autofocus/>
+          <input type="text" class="comment_box" placeholder="Enter Comment" autofocus ng-readonly="false"/>
+        </div>
+      </div>
+    </div>-->
+    <div class="" style="height: 100%">
+      <div class="share_modal_clickable_content" ng-click="closeCommentModal()"></div>
+      <div class="comment_box_div">
+        <div class="list">
+          <label class="item item-input">
+            <input type="text" placeholder="Enter comment" autofocus>
+          </label>
         </div>
       </div>
     </div>
+
   </ion-content>
 </ion-modal-view>
