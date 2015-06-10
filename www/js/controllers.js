@@ -41,6 +41,7 @@ angular.module('starter.controllers', [])
       $scope.closeShareModal();
       $scope.closeCommentModal();
       $scope.closeMyFavor();
+      $scope.closeProfile();
     });
 
     $scope.openRegisterSlide = function () {

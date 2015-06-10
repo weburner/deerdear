@@ -11,12 +11,129 @@
   -moz-transform: translate3d(0px, 0px, 0px) !important;
 }
 
+/*Stop ion-side-menu-content Animation*/
+ion-side-menu-content {
+  -webkit-transition-property: none !important;
+  -moz-transition-property: none !important;
+  transition-property: none !important;
+}
+
+/*Animation ion-side-menu*/
+.side_menu {
+  -webkit-transform: translate3d(-275px, 0, 0);
+  -moz-transform: translate3d(-275px, 0, 0);
+  transform: translate3d(-275px, 0, 0);
+  -webkit-transition: -webkit-transform .3s;
+  -moz-transition: -moz-transform .3s;
+  transition: transform .3s;
+  z-index: 99 !important;
+}
+
 .menu-open .side_menu {
-  z-index: 199 !important;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
+
+/*Transparent Menu*/
+.side_menu {
+  background-color: rgba(0, 0, 0, .8);
+}
+
+.menu_content {
+  background-color: transparent !important;
+}
+
+.menu_header {
+  background-color: transparent !important;
+}
+
+.menu_content ion-item {
+  background-color: transparent !important;
+}
+
+/*Blur Content When Side Menu Open*/
+.menu-open ion-side-menu-content {
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  filter: blur(10px);
+}
+
+/*## Modal Background Color*/
+ion-modal-view {
+  background-color: transparent !important;
+}
+
+.modal-backdrop-bg {
+  /*background-color: rgba(23, 23, 23, .9);*/
+}
+
+/*## Blur Content When Modal Shown*/
+.modal-open ion-nav-view {
+  -webkit-filter: blur(10px);
+  -moz-filter: blur(10px);
+  filter: blur(10px);
+}
+
 .modal-backdrop.active {
-  background-color: rgba(0, 0, 0, 0.50);
+  background-color: rgba(0, 0, 0, 0.80);
 }
+
+/*## Verticle Swiper CSS*/
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /*Center slide text vertically*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  /*display: -webkit-flex;*/
+  /*display: flex;*/
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+label.filebutton {
+  width: 120px;
+  height: 40px;
+  overflow: hidden;
+  position: relative;
+  background-color: #ccc;
+}
+
+label span input {
+  z-index: 999;
+  line-height: 0;
+  font-size: 50px;
+  position: absolute;
+  top: -2px;
+  left: -700px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -ms-filter: "alpha(opacity=0)";
+  cursor: pointer;
+  _cursor: hand;
+  margin: 0;
+  padding: 0;
+}
+
+.full-bg-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 .letter_space_1px {
   letter-spacing: 1px;
 }
@@ -89,6 +206,10 @@
 
 /*Over riding CSS END*/
 
+.cursor_pointer {
+  cursor: pointer;
+}
+
 .margin_vertical {
   margin: 10px 0;
 }
@@ -96,12 +217,15 @@
 .margin_horizontal {
   margin: 0 10px;
 }
+
 .text_align_start {
   text-align: start;
 }
+
 .border_none {
   border: none !important;
 }
+
 .hr_line_ff_95p {
   display: block !important;
   border-top: 1px solid #AAAAAA;
@@ -278,6 +402,7 @@
 .login_modal_content label {
   padding: 2px 2px 2px 4px !important;
 }
+
 .security_code_btn {
   padding: 2px;
   min-width: 50px;
@@ -293,6 +418,7 @@
   line-height: 35px;
   cursor: pointer;
 }
+
 .comments_page .item {
   padding: 5px;
 }
@@ -336,6 +462,7 @@
   width: 100%;
   height: 48vh;
 }
+
 .share_modal_main_content {
   position: fixed;
   z-index: 1003;
@@ -348,7 +475,8 @@
 .comment_box_div {
 
 }
-.comment_box{
+
+.comment_box {
   width: 100%;
   height: 44px !important;
   border: 5px solid #ffffff !important;
@@ -361,13 +489,15 @@
   padding-top: 18px;
   width: 100%;
 }
-.login_images{
+
+.login_images {
   width: 35px;
   height: 35px;
   margin-right: 15px;
   position: relative;
   top: 8px;
 }
+
 .width_80p {
   width: 80%;
 }
@@ -460,7 +590,14 @@
   height: 70px;
   margin: auto;
   border-radius: 50%;
-  color: black;
+  color: #AAAAAA;
+}
+
+.profile_image_icon {
+  font-size: 60px;
+  position: absolute;
+  padding-left: 20%;
+  top: -8px;
 }
 
 .close_icon {
@@ -525,6 +662,7 @@
 .padding_horizontal_20px {
   padding: 0 20px !important;
 }
+
 .cover_image {
   background-size: contain;
   background-repeat: no-repeat;
@@ -534,7 +672,7 @@
 }
 
 .style_page_content fieldset.box-title {
-  border:none;
+  border: none;
   text-align: center;
   border-top: 1px solid #AAAAAA;
   width: 95%;
@@ -542,26 +680,12 @@
 }
 
 .style_page_content fieldset.box-title legend {
-  border:none;
+  border: none;
   padding: 0 10px;
   display: block;
   width: auto;
   margin: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @font-face {
   font-family: 'HelveticaNeue-Thin';
