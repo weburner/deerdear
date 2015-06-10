@@ -332,7 +332,15 @@
 .share_modal_clickable_content {
   position: fixed;
   width: 100%;
-  height: 80vh;
+  height: 48vh;
+}
+.share_modal_main_content {
+  position: fixed;
+  z-index: 1003;
+  top: 48vh;
+  background-color: rgba(0, 0, 0, 0.85);
+  width: 100%;
+  height: 52vh;
 }
 
 .comment_box_div {
@@ -344,14 +352,6 @@
   border: 5px solid #ffffff !important;
   background-color: #eeeeee;
 }
-.share_modal_main_content {
-  position: fixed;
-  z-index: 1003;
-  top: 50vh;
-  background-color: rgba(0, 0, 0, 0.85);
-  width: 100%;
-  height: 50vh;
-}
 
 .media_page .fixed_icons {
   position: fixed;
@@ -359,7 +359,13 @@
   padding-top: 18px;
   width: 100%;
 }
-
+.login_images{
+  width: 35px;
+  height: 35px;
+  margin-right: 15px;
+  position: relative;
+  top: 8px;
+}
 .width_80p {
   width: 80%;
 }
