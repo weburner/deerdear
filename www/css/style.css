@@ -695,6 +695,12 @@ label span input {
   position: relative;
   top: 4px;
 }
+.style_page .small_images .description_sections {
+  position: absolute;
+  bottom: 4px;
+  width: 95%;
+}
+
 .style_page .col-50 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -713,7 +719,7 @@ label span input {
   -ms-flex-direction: column;
   flex-direction: column;
 }
-/*.style_page .item-avatar, .item.tabs {
+.style_page .item-avatar, .item.tabs {
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
@@ -724,7 +730,7 @@ label span input {
   -webkit-flex: 1 1 auto;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
-}*/
+}
 
 /*Style page small images css End*/
 
