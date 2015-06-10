@@ -221,7 +221,6 @@ label span input {
 .text_align_start {
   text-align: start;
 }
-
 .border_none {
   border: none !important;
 }
@@ -686,6 +685,60 @@ label span input {
   width: auto;
   margin: 0;
 }
+.padding_5px {
+  padding: 5px !important;
+}
+
+/*Style page small images css Start*/
+
+.style_page .small_images .small_description {
+  position: relative;
+  top: 4px;
+}
+.style_page .col-50 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.style_page .card {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+/*.style_page .item-avatar, .item.tabs {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+.style_page .item-body {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}*/
+
+/*Style page small images css End*/
+
+
+
+
+
+
+
+
+
+
+
+
 
 @font-face {
   font-family: 'HelveticaNeue-Thin';
