@@ -644,7 +644,7 @@ label span input {
   position: fixed;
   display: inline;
   padding-top: 5px;
-  z-index: 100;
+  z-index: 999;
   background-color: #000000;
   margin: 10px;
   border-radius: 50%;
