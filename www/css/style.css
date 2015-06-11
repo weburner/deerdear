@@ -37,7 +37,7 @@ ion-side-menu-content {
 
 /*Transparent Menu*/
 .side_menu {
-  background-color: rgba(0, 0, 0, .8);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .menu_content {
@@ -503,16 +503,16 @@ label span input {
 
 .menu_content {
   top: 120px !important;
-  background-color: rgb(65, 65, 65) !important;
+  background-color: rgba(0, 0, 0, 0.70) !important;
 }
 
 .menu_header {
-  background-color: rgb(65, 65, 65) !important;
+  background-color: rgba(0, 0, 0, 0.70) !important;
   height: 120px !important;
 }
 
 .menu_content ion-item {
-  background-color: rgb(65, 65, 65) !important;
+  background-color: rgba(0, 0, 0, 0.0) !important;
   border: none !important;
   padding: 5px 15px !important;
   color: #dddddd;
